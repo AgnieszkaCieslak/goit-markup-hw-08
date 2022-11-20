@@ -1,0 +1,72 @@
+.card-header__list{
+display: flex;
+padding: 0;
+}
+.card-header__list--nav {
+  @extend .card-header__list;
+  gap: 50px;
+  margin-left: 93px;
+}
+.card-header__list--contact-details {
+  @extend .card-header__list;
+display: flex;
+gap: 30px;
+padding: 0;
+margin-left: 345px;
+}
+
+.list-strengths {
+    display: flex;
+    justify-content: space-around;
+  }
+    .list-strengths__body-icon {
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    background-color: $background-color-secondary;
+  }
+  .list-strengths__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+   .card-what-we-do__list {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .card-team__list {
+    margin-top: 50px;
+    display: flex;
+    font-size: 16px;
+    line-height: 1.18;
+    gap: 30px;
+  }
+  .card-team__social-list {
+    padding-inline: 32px;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-clients__list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+  }
+
+  .card-footer__list {
+    margin-top: 20px;
+  }
+  .card-footer__social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+  }
+
+  .portfolio__list-button {
+    display: flex;
+    justify-content: center;
+  }

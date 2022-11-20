@@ -1,0 +1,51 @@
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1200px;
+  }
+  .section {
+    padding-block: 94px;
+  }
+
+  .card-header__logo{
+    padding: 24px 0; 
+   }
+   
+  .list-strengths__box-left {
+    margin-right: 15px;
+    padding-left: 15px;
+  }
+  .list-strengths__box {
+    margin-inline: 15px;
+  }
+  .list-strengths__box-right {
+    margin-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .card-team__container {
+    margin-top: 30px;
+  }
+  .card-footer__margin {
+    margin-top: 9px;
+   }
+
+  .card-footer__wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .card-footer__container-join {
+    margin-left: 70px;
+  }
+  .card-footer__subscribe {
+    margin-left: auto;
+  }
+
+  .portfolio__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }

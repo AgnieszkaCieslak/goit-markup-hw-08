@@ -1,0 +1,111 @@
+.card-footer__input {
+    padding-left: 15px;
+    width: 358px;
+    height: 50px;
+    color: $color-white;
+    background-color: $background-color-footer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+    transition-property: border-color;
+    &:hover{
+      border-color: $color-blue;
+    }
+    &:focus-within {
+      border: 3px solid $color-blue;
+      outline: none;
+    }
+  }
+  // .card-footer__input:hover {
+    
+  // }
+  // .card-footer__input:focus-within {
+  //   border: 3px solid var(--color-blue);
+  //   outline: none;
+  // }
+
+  .modal__input-group {
+    position: relative;
+    margin-bottom: 10px;
+    transition-property: fill;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+    &:hover{
+      fill: $color-blue;
+      border-color: $color-blue;
+    }
+    &:focus{
+      fill: $color-blue;
+      border-color:$color-blue;
+    }
+    &:focus-within {
+      fill: $color-blue;
+    }
+  }
+  .modal__input-group-comment {
+    position: relative;
+    &:hover {
+      fill: $color-blue;
+      border-color: $color-blue;
+    }
+&:focus {
+  fill: $color-blue;
+  border-color: $color-blue;
+}
+&:focus-within {
+  fill: $color-blue;
+}
+  }
+  // .modal__input-group:hover,
+  // .modal__input-group:focus,
+  // .modal__input-group-comment:hover,
+  // .modal__input-group-comment:focus {
+  //   fill: var(--color-blue);
+  //   border-color: var(--color-blue);
+  // }
+  // .modal__input-group:focus-within,
+  // .modal__input-group-comment:focus-within {
+  //   fill: var(--color-blue);
+  // }
+  .modal__input-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  .modal__input-details {
+    display: flex;
+    justify-content: center;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline-color:$color-blue;
+    transition-property: border-color;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+&:hover {
+  border-color: $color-blue;
+}
+  }
+  // .modal__input-details:hover {
+  //   border-color: var(--color-blue);
+  // }
+  .single-line-input {
+    padding-left: 42px;
+    height: 40px;
+  }
+  textarea[id="comment"].modal__input-details::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .multiple-line-input {
+    margin-bottom: 0px;
+    padding-top: 12px;
+    padding-left: 16px;
+  }

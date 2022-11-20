@@ -1,0 +1,12 @@
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    left: 0px;
+    top: 0px;
+    transition-property: opacity, transform, visibility;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+  }

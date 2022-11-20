@@ -1,0 +1,46 @@
+.card-what-we-do__image {
+    display: block;
+    height: 294px;
+  }
+  .card-team__img {
+    margin: 0 0 0 0;
+    background-color: $background-color-primary;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .portfolio__picture {
+    margin: 0 0 0 0;
+    border-bottom: 1px solid #eeeeee;
+    width: 370px;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+    transition-property: box-shadow;
+        &:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+              & .portfolio__overlay {
+    transform: translateX(0);
+  }
+}
+        &:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+// &:hover .portfolio__overlay {
+//   transform: translateX(0);
+// }
+  }
+  // .portfolio__picture:hover,
+  // .portfolio__picture:focus {
+   
+  // }
+  // .portfolio__picture:hover .portfolio__overlay {
+  //   transform: translateX(0);
+  // }
+  .portfolio__picture-margin {
+    padding: 20px 24px;
+  }
+
+
+

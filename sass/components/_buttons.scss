@@ -1,0 +1,100 @@
+.button{
+    font-family: inherit;
+    font-weight: 700;
+   font-size: 16px;
+  line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $color-white;
+    background: $color-blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border: 0px;
+  display: flex;
+  align-items: center;
+  }
+  .card-title__button {
+    margin: 30px auto 0;
+  padding-block: 10px;
+  padding-inline: 41px;
+  }
+.card-footer__button {
+  padding-top: 3px;
+    flex-direction: row;
+  justify-content: space-around;
+    width: 200px;
+  height: 50px;
+   }
+.modal__button {
+  margin: 0 auto;
+  padding: 0 0 0 0;
+   justify-content: center;
+   width: 200px;
+  height: 50px;
+     }
+  
+    .modal__button-cross {
+      position: absolute;
+      top: 20%;
+      left: 18%;
+      display: flex;
+      width: 18px;
+      height: 18px;
+    }
+    .modal__cross {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 3;
+      display: flex;
+      width: 30px;
+      height: 30px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      background-color:$background-color-primary;
+    }
+    .modal__square {
+      position: absolute;
+      z-index: 4;
+      top: 4px;
+      left: 4px;
+      width: 16px;
+      height: 15px;
+      background-color: $color-white;
+      border: 2px solid $color-black;
+    }
+    
+.portfolio__button {
+  margin-inline: 4px;
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background: $background-color-secondary;
+  border-radius: 4px;
+  border:$background-color-secondary;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  transition-property: color, background-color, box-shadow;
+&:hover{
+   color: $color-white;
+  background: $color-blue;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+&:focus{
+  color: $color-white;
+ background: $color-blue;
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+   0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+}
+// .portfolio__button:hover,
+// .portfolio__button:focus {
+ 
+// }
+.portfolio__buttons-margin {
+  margin-bottom: 50px;
+}

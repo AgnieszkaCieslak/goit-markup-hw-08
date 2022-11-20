@@ -1,0 +1,50 @@
+.card-what-we-do__dimnest {
+  display: flex;
+  width: 370px;
+  height: 70px;
+  background: $background-color-dimness;
+  bottom: 0;
+  font-weight: 700;
+  line-height: 1.14;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+
+
+.portfolio__blue-box {
+    margin-inline: auto;
+    position: relative;
+    width: 370px;
+    height: 294px;
+    background-color:$background-color-button-active;
+    overflow: hidden;
+  }
+  .portfolio__overlay {
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+    transition-property: transform;
+  }
+  
+  .portfolio__overlay {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translate(0, 300px);
+  }
+  .portfolio__overlay-text {
+    margin: 0;
+    padding-top: 49px;
+    padding-left: 24px;
+    width: 301px;
+    font-size: 18px;
+    line-height: 1.56;
+    color: $color-white;
+  }
+  

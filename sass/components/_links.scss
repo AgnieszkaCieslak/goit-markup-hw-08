@@ -1,0 +1,107 @@
+.links {
+    display: block;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+&.blue::after {
+  content: "";
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  top: 45px;
+  left: 0px;
+  background: $background-color-button-active;
+  border-radius: 2px;
+}
+  }
+  .links--mail{
+    @extend .links;
+  display: flex;
+    width: 161px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links--tel {
+    @extend .links;
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  // .links.blue::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 53px;
+  //   height: 4px;
+  //   top: 45px;
+  //   left: 0px;
+  //   background: var(--background-color-button-active);
+  //   border-radius: 2px;
+  // }
+  .card-team__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color:$background-color-primary;
+    border-radius: 50%;
+    fill: $background-color-button-inactive;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+    transition-property: fill, background-color;
+    &:hover{
+      background-color: $background-color-button-active;
+    fill:$background-color-primary;
+    }
+    &:focus{
+      background-color: $background-color-button-active;
+    fill:$background-color-primary;
+    }
+  }
+  
+  .card-clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: $background-color-primary;
+    border: 1px solid $color-grey;
+    fill: $background-color-button-inactive;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+    transition-property: fill, border;
+      &:hover{
+        border: 1px solid $color-blue;
+  fill: $color-blue;
+      }
+        &:focus{
+          border: 1px solid $color-blue;
+  fill: $color-blue;
+        }
+  }
+
+.card-footer__social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: $background-color-icon-footer;
+    border-radius: 50%;
+    fill: $background-color-primary;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+    transition-property: background-color;
+    &:hover{
+       background-color: $background-color-button-active;
+       &:focus{
+        background-color: $background-color-button-active;
+    }
+  }
+}
+  

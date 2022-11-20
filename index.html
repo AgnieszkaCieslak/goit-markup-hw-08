@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="alc" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+    <title>Studio</title>
+  </head>
+  <body>
+    <!----------------- HEADER ----------------->
+    <header class="header-underline">
+      <!----------------- LOGO ----MIX Z LOGO i LOGO-COLOR------------->
+      <div class="card-header container">
+        <a class="card-header__logo logo--blue" href="index.html"
+          >Web<span class="logo--black">Studio</span></a
+        >
+        <!-- --------------   NAVIGATION  -------------- -->
+        <!-- --------------   LIST-NAV  -------------- -->
+        <nav>
+          <ul class="card-header__list--nav">
+            <li>
+              <a class="links blue" style="position: relative" href="#"
+                >Agencja</a
+              >
+            </li>
+            <li>
+              <a class="links dark" href="portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="links dark" href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <!-- --------------  LIST-CONTACT-DETAILS  -------------- -->
+        <div>
+          <ul class="card-header__list--contact-details">
+            <li>
+              <a
+                class="links--mail dark-grey "
+                href="mailto:info@devstudio.com"
+                ><svg width="16" height="12">
+                  <use
+                    href="images/icons.svg#icon-envelope-dark-grey"
+                  ></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="links--tel dark-grey" href="tel:+48111111111"
+                ><svg width="10" height="16">
+                  <use
+                    href="images/icons.svg#icon-smartphone-dark-grey"
+                  ></use></svg
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!----------------- CARD-TITLE & BUTTON ------->
+      <section class="card-title">
+        <div class="container">
+          <h1 class="card-title__heading">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
+          <button class="card-title__button button  pointer" type="button" data-modal-open>
+            Zamów usługe
+          </button>
+        </div>
+      </section>
+      <!-------------------STRENGTHS --------------->
+      <section>
+        <div class="container section">
+          <ul class="list-strengths">
+            <li class="list-strengths__box-left">
+              <div class="list-strengths__body-icon">
+                <svg class="list-strengths__icon">
+                  <use
+                    href="images/icons.svg#icon-antena"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="list-strengths__subtitle">LOREM IPSUM</h3>
+              <p class="list-strengths__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non&nbsp;sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="list-strengths__box">
+              <div class="list-strengths__body-icon">
+                <svg class="list-strengths__icon">
+                  <use
+                   href="images/icons.svg#icon-clock"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="list-strengths__subtitle">LOREM IPSUM</h3>
+              <p class="list-strengths__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non&nbsp;sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="list-strengths__box">
+              <div class="list-strengths__body-icon">
+                <svg class="list-strengths__icon">
+                  <use
+                    href="images/icons.svg#icon-diagram"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="list-strengths__subtitle">LOREM IPSUM</h3>
+              <p class="list-strengths__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                velarcu sem. Sed non&nbsp;sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="list-strengths__box-right">
+              <div class="list-strengths__body-icon">
+                <svg class="list-strengths__icon">
+                  <use href="images/icons.svg#icon-astronaut"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="list-strengths__subtitle">LOREM IPSUM</h3>
+              <p class="list-strengths__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non&nbsp;sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-----------------WHAT WE DO ------------------>
+      <section>
+        <div class="card-what-we-do container">
+          <h2 class="heading">Czym się zajmujemy</h2>
+          <ul class="card-what-we-do__list">
+            <li style="position: relative">
+              <img
+                class="card-what-we-do__image"
+                src="images/coding-image.jpg"
+                alt="typing-in-front-of-the-monitor"
+                width="370"
+              />
+              <div class="card-what-we-do__dimnest" style="position: absolute">
+                Aplikacje komputerowe
+              </div>
+            </li>
+
+            <li style="position: relative">
+              <img
+                class="card-what-we-do__image"
+                src="images/layout-image.jpg"
+                alt="Layout"
+                width="370"
+              />
+              <div class="card-what-we-do__dimnest" style="position: absolute">
+                Aplikacje mobilne
+              </div>
+            </li>
+
+            <li style="position: relative">
+              <img
+                class="card-what-we-do__image"
+                src="images/design-image.jpg"
+                alt="Design"
+                width="370"
+              />
+              <p class="card-what-we-do__dimnest" style="position: absolute">
+                Rozwiązania graficzne
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-----------------OUR TEAM------------------>
+      <section class="card-team section">
+        <div class="container">
+          <h2 class="heading">Nasz zespół</h2>
+          <ul class="card-team__list">
+            <!-----------------* 1 *------------------>
+            <li>
+              <figure class="card-team__img">
+                <img
+                  src="images/john-doe-produkt-designer.jpg"
+                  alt="product-designer"
+                  width="270"
+                />
+                <figcaption class="card-team__container">
+                  <h4 class="card-team__title">John Doe</h4>
+                  <p class="card-team__subtitle">Product Designer</p>
+                  <ul class="card-team__social-list">
+                    <!-----------------* 1 A *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-instagram-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 1 B *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-twitter-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 1 C *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-facebook-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 1 D *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-linkedin-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </li>
+            <!-----------------* 2 *------------------>
+            <li>
+              <figure class="card-team__img">
+                <img
+                  src="images/john-doe-frontend-developer.jpg"
+                  alt="frontend-developer"
+                  width="270"
+                />
+                <figcaption class="card-team__container">
+                  <h4 class="card-team__title">John Doe</h4>
+                  <p class="card-team__subtitle">Frontend Developer</p>
+                  <ul class="card-team__social-list">
+                    <!-----------------* 2 A *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-instagram-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 2 B *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-twitter-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 2 C *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-facebook-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 2 D *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-linkedin-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </li>
+            <!-----------------* 3 *------------------>
+            <li>
+              <figure class="card-team__img">
+                <img
+                  src="images/john-doe-marketing.jpg"
+                  alt="marketing"
+                  width="270"
+                />
+                <figcaption class="card-team__container">
+                  <h4 class="card-team__title">John Doe</h4>
+                  <p class="card-team__subtitle">Marketing</p>
+                  <ul class="card-team__social-list">
+                    <!-----------------* 3 A *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-instagram-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 3 B *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-twitter-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 3 D *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-facebook-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 3 D *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-linkedin-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </li>
+            <!-----------------* 4 *------------------>
+            <li>
+              <figure class="card-team__img">
+                <img
+                  src="images/john-doe-ui-designer.jpg"
+                  alt="ui-designer"
+                  width="270"
+                />
+                <figcaption class="card-team__container">
+                  <h4 class="card-team__title">John Doe</h4>
+                  <p class="card-team__subtitle">UIDesigner</p>
+                  <ul class="card-team__social-list">
+                    <!-----------------* 4 A *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-instagram-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 4 B *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-twitter-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 4 C *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-facebook-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <!-----------------* 4 D *------------------>
+                    <li>
+                      <a class="card-team__links" href="#">
+                        <svg class="social-media__icon">
+                          <use
+                            href="images/icons.svg#icon-linkedin-grey"
+                          ></use></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- -----------------OUR CLIENTS------------------ -->
+      <section class="card-clients">
+        <div class="section container">
+          <h2 class="heading">Nasi klienci</h2>
+          <ul class="card-clients__list">
+            <li>
+              <a class="card-clients__link" href="#">
+                <svg class="card-clients__icon">
+                  <use href="images/icons.svg#icon-ya-co-grey"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="card-clients__link" href="#">
+                <svg class="card-clients__icon">
+                  <use href="images/icons.svg#icon-tagline-grey"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="card-clients__link" href="#">
+                <svg class="card-clients__icon">
+                  <use href="images/icons.svg#icon-company-grey"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="card-clients__link" href="#">
+                <svg class="card-clients__icon">
+                  <use href="images/icons.svg#icon-foster-blue"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="card-clients__link" href="#">
+                <svg class="card-clients__icon">
+                  <use href="images/icons.svg#icon-brand-grey"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="card-clients__link" href="#">
+                <svg class="card-clients__icon">
+                  <use href="images/icons.svg#icon-tag-line-grey"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- -----------------FOOTER------------------ -->
+    <footer class="card-footer">
+      <div class="card-footer__wrapper container">
+        <address>
+          <a class="logo--blue" href="index.html"
+            >Web<span class="logo--white">Studio</span></a
+          >
+          <ul class="card-footer__list">
+            <li>
+              <p class="card-footer__address white">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </p>
+            </li>
+            <li class="card-footer__margin">
+              <a class="card-footer__address light-grey" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="card-footer__margin">
+              <a class="card-footer__address light-grey" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </address>
+        <!-------------------------- JOIN US ---------------------->
+        <div class="card-footer__container-join">
+          <p class="card-footer__subtitle">DOŁĄCZ DO NAS</p>
+          <div class="card-footer__social-list">
+            <a class="card-footer__social-links" href="#">
+              <svg class="social-media__icon">
+                <use
+                  href="images/icons.svg#icon-instagram-black"
+                ></use></svg></a
+            ><a class="card-footer__social-links" href="#">
+              <svg class="social-media__icon">
+                <use href="images/icons.svg#icon-twitter-black"></use></svg></a
+            ><a class="card-footer__social-links" href="#">
+              <svg class="social-media__icon">
+                <use href="images/icons.svg#icon-facebook-black"></use></svg></a
+            ><a class="card-footer__social-links" href="#">
+              <svg class="social-media__icon">
+                <use href="images/icons.svg#icon-linkedin-black"></use></svg
+            ></a>
+          </div>
+        </div>
+        <!-----------------SUBSCRIBE TO THE NEWSLETTER-------------->
+        <div class="card-footer__subscribe">
+          <label class="card-footer__subtitle" for="email-subscribe"
+            >Zapisz sie do newslettera</label
+          >
+          <form
+            class="card-footer__form"
+            name="signup-form"
+            autocomplete="on"
+            novalidate
+          >
+            <input
+              class="card-footer__input"
+              id="email-subscribe"
+              type="email"
+              name="email-subscribe"
+              placeholder="E-mail"
+              required
+            />
+            <button class="button card-footer__button pointer" type="submit">
+              Zapisz się<svg width="24" height="24">
+                <use href="images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!---------------------- MODAL WINDOW ---------------------->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <!---------------------- MODAL INPUTS ---------------------->
+
+        <p class="modal__heading">Zostaw swoje dane w formularzu poniżej</p>
+        <form>
+          <label class="modal__label" for="name">Imię</label>
+          <div class="modal__input-group">
+            <span
+              ><svg class="modal__input-icon" width="12" height="12">
+                <use href="images/icons.svg#icon-icon-human"></use></svg
+            ></span>
+            <input
+              class="modal__input-details single-line-input"
+              id="name"
+              type="text"
+              name="name"
+              required
+            />
+          </div>
+
+          <label class="modal__label" for="phone">Telefon</label>
+
+          <div class="modal__input-group">
+            <svg class="modal__input-icon" width="13" height="13">
+              <use href="images/icons.svg#icon-earphone"></use>
+            </svg>
+            <input
+              class="modal__input-details single-line-input"
+              id="phone"
+              type="tel"
+              name="phone"
+              required
+            />
+          </div>
+
+          <label class="modal__label" for="email">Email</label>
+
+          <div class="modal__input-group">
+            <svg class="modal__input-icon" width="15" height="12">
+              <use href="images/icons.svg#icon-envelope-II"></use>
+            </svg>
+            <input
+              class="modal__input-details single-line-input"
+              id="email"
+              type="email"
+              name="email"
+              required
+            />
+          </div>
+          <label class="modal__label" for="comment">Komentarz</label>
+          <div class="modal__input-group-comment">
+            <textarea
+              class="modal__input-details multiple-line-input"
+              id="comment"
+              name="comment"
+              rows="6"
+              placeholder="Wprowadź tekst"
+              required
+            ></textarea>
+          </div>
+          <label
+            class="modal__statement pointer"
+            for="regulations-and-privacy-policy"
+          >
+            Oświadczam iż akceptuję&nbsp;<a class="modal__regulations-policy" href="#"
+              >Regulamin</a
+            >&nbsp;i&nbsp;
+            <a class="modal__regulations-policy" href="#">Politykę Prywatności.</a
+            ><span class="modal__square pointer"></span>
+            <input
+              class="modal__checkbox"
+              id="regulations-and-privacy-policy"
+              type="checkbox"
+              name="regulations-and-privacy-policy"
+              required
+            /><span>
+              <svg class="modal__checkbox-icon" width="16" height="15">
+                <use href="images/icons.svg#icon-icon-uncheck"></use>
+              </svg>
+            </span>
+          </label>
+          <button class="button modal__button pointer" type="submit" name="send">
+            Wyślij
+          </button>
+        </form>
+
+        <button
+          class="modal__cross pointer"
+          type="button"
+          data-modal-close
+        >
+          <svg class="modal__button-cross">
+            <use href="images/icons.svg#icon-X"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

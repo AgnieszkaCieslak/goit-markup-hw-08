@@ -1,0 +1,35 @@
+.blue {
+    color: $color-blue;
+  }
+  .dark {
+    color: inherit;
+    transition-property: fill, color;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+  }
+  .dark-grey {
+    color: $color-dark-grey;
+    fill: $color-dark-grey;
+    transition-property: fill, color;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+  }
+  .white {
+    color: $color-white;
+  }
+  .light-grey {
+    color: $color-light-grey;
+    transition-property: fill, color;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+  }
+  
+  .dark:hover,
+  .dark-grey:hover,
+  .light-grey:hover,
+  .dark:focus,
+  .dark-grey:focus,
+  .light-grey:focus {
+    color: $color-blue;
+    fill: $color-blue;
+  }
