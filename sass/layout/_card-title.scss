@@ -1,11 +1,51 @@
 .card-title {
-    margin: 0 auto;
-    padding-block: 200px;
+  margin: 0 auto;
+  padding-block: 118px;
+  max-width: 480px;
+  height: 400px;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/photo-background-1x-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .card-title {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/photo-background-2x-mobile.jpg);
+    }
+  }  
+@media screen and (min-width: 768px) {
+  .card-title {
+        max-width: 768px;
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/photo-background-1x-tablet.jpg);
+      }
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .card-title {
+          background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/photo-background-2x-tablet.jpg);
+        }
+      }  
+}
+@media screen and (min-width: 1200px) {
+.card-title {
+       padding-block: 200px;
     max-width: 1600px;
     height: 600px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/photo-background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+      url(../images/photo-background-1x.jpg);
+      }
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .card-title {
+          background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/photo-background-2x.jpg);
+        }
+      }  
+}

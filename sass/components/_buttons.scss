@@ -1,100 +1,155 @@
-.button{
-    font-family: inherit;
-    font-weight: 700;
-   font-size: 16px;
+@mixin button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
   line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: $color-white;
-    background: $color-blue;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   border: 0px;
+  letter-spacing: 0.06em;
+  color: $color-white;
+  background: $color-blue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px;
   display: flex;
   align-items: center;
-  }
-  .card-title__button {
-    margin: 30px auto 0;
+}
+.card-title__button {
+  @include button;
+  margin: 30px auto 0;
   padding-block: 10px;
   padding-inline: 41px;
-  }
+}
 .card-footer__button {
+  @include button;
   padding-top: 3px;
-    flex-direction: row;
+  flex-direction: row;
   justify-content: space-around;
-    width: 200px;
+  width: 200px;
   height: 50px;
-   }
+}
+.mobile-nav__btn{
+  position: relative;
+    top:4px;
+    left:270px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  fill: $color-black;
+  transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+    transition-property: fill;
+    &:hover{
+    fill:$color-blue;
+    }
+    &:focus{
+    fill:$color-blue;
+    }
+
+}
+.mobile-menu__btn-close{
+  width: 20px;
+  height: 20px;
+  top:-30px;
+    left:400px;
+  position:relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  fill: $color-black;
+  transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+    transition-property: fill;
+    &:hover{
+    fill:$color-blue;
+    }
+    &:focus{
+    fill:$color-blue;
+    }
+}
 .modal__button {
+  @include button;
   margin: 0 auto;
   padding: 0 0 0 0;
-   justify-content: center;
-   width: 200px;
+  justify-content: center;
+  width: 200px;
   height: 50px;
-     }
-  
-    .modal__button-cross {
-      position: absolute;
-      top: 20%;
-      left: 18%;
-      display: flex;
-      width: 18px;
-      height: 18px;
-    }
-    .modal__cross {
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      z-index: 3;
-      display: flex;
-      width: 30px;
-      height: 30px;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-      background-color:$background-color-primary;
-    }
-    .modal__square {
-      position: absolute;
-      z-index: 4;
-      top: 4px;
-      left: 4px;
-      width: 16px;
-      height: 15px;
-      background-color: $color-white;
-      border: 2px solid $color-black;
-    }
-    
+}
+.modal__button-cross {
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  display: flex;
+  width: 18px;
+  height: 18px;
+}
+.modal__cross {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 3;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: $background-color-primary;
+  transition-property: fill;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+  &:hover,
+  &:focus {
+    fill: $color-blue;
+   }
+  }
+.modal__square {
+  position: absolute;
+  z-index: 4;
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 15px;
+  background-color: $color-white;
+  border: 2px solid $color-black;
+}
 .portfolio__button {
-  margin-inline: 4px;
-  padding: 6px 22px;
+  @include button;
+   width: 20vw;
+  height: 38px;
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+    line-height: 1.62;
+    color: $color-dark;
   background: $background-color-secondary;
   border-radius: 4px;
-  border:$background-color-secondary;
+  border: $background-color-secondary;
+  justify-content: center;
   transition-duration: var(--t-duration);
   transition-timing-function: var(--t-timing-function);
   transition-property: color, background-color, box-shadow;
-&:hover{
-   color: $color-white;
-  background: $color-blue;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-&:focus{
-  color: $color-white;
- background: $color-blue;
- box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-   0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover {
+    color: $color-white;
+    background: $color-blue;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  &:focus {
+    color: $color-white;
+    background: $color-blue;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-nav__btn{
+    display: none;
+  }
 }
-// .portfolio__button:hover,
-// .portfolio__button:focus {
- 
-// }
-.portfolio__buttons-margin {
-  margin-bottom: 50px;
+.portfolio__button {
+      width: 15vw;
+  }
+@media screen and (min-width: 1200px) {
+  .portfolio__button {
+    max-width: 10vw;
+    }
 }

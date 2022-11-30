@@ -1,13 +1,201 @@
 .card-what-we-do__image {
+  display: none;
+}
+.card-team__img {
+  margin: 30px 0 0 0;
+  background-color: $background-color-primary;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 0px 0px 4px 4px;
+  display: flex;
+  flex-direction: column;
+    width: 450px;
+      }
+
+@mixin img-portrait {
+    width: 450px;
+  height: 460px;
+  background-size: 450px 460px;
+}
+.card-team__img-portrait--produkt-designer {
+  @include img-portrait;
+  background-image: url("../images/john-doe-produkt-designer-1x-mobile.jpg");
+}
+.card-team__img-portrait--frontend-developer {
+  @include img-portrait;
+  background-image: url("../images/john-doe-frontend-developer-1x-mobile.jpg");
+}
+.card-team__img-portrait--marketing {
+  @include img-portrait;
+  background-image: url("../images/john-doe-marketing-1x-mobile.jpg");
+}
+.card-team__img-portrait--ui-designer {
+  @include img-portrait;
+  background-image: url("../images/john-doe-ui-designer-1x-mobile.jpg");
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .card-team__img-portrait--produkt-designer {
+    background-image: url("../images/john-doe-produkt-designer-2x-mobile.jpg");
+  }
+  .card-team__img-portrait--frontend-developer {
+    background-image: url("../images/john-doe-frontend-developer-2x-mobile.jpg");
+  }
+  .card-team__img-portrait--marketing {
+    background-image: url("../images/john-doe-marketing-2x-mobile.jpg");
+  }
+  .card-team__img-portrait--ui-designer {
+    background-image: url("../images/john-doe-ui-designer-2x-mobile.jpg");
+  }
+}
+@mixin img-what-we-do{
+  width: 370px;
+  height: 294px;
+  background-size: 370px 294px;
+}
+.card-what-we-do__image--codding{
+  @include img-what-we-do;
+  background-image: url("../images/coding-image-1x.jpg");
+}
+.card-what-we-do__image--layout{
+  @include img-what-we-do;
+  background-image: url("../images/layout-image-1x.jpg");
+}
+.card-what-we-do__image--design{
+  @include img-what-we-do;
+  background-image: url("../images/design-image-1x.jpg");
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .card-what-we-do__image--codding{
+      @include img-what-we-do;
+      background-image: url("../images/coding-image-2x.jpg");
+    }
+    .card-what-we-do__image--layout{
+      @include img-what-we-do;
+      background-image: url("../images/layout-image-2x.jpg");
+    }
+    .card-what-we-do__image--design{
+      @include img-what-we-do;
+      background-image: url("../images/design-image-2x.jpg");
+    }}
+
+    .portfolio__picture {
+      margin: 0 0 0 0;
+      border-bottom: 1px solid #eeeeee;
+      width: 450px;
+      transition-duration: var(--t-duration);
+      transition-timing-function: var(--t-timing-function);
+      transition-property: box-shadow;
+      &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+          0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        & .portfolio__overlay {
+          transform: translateX(0);
+        }
+      }
+      &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+          0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      }
+    }
+    .portfolio__picture-margin {
+      padding: 20px 24px;
+    }
+
+@media screen and (min-width: 768px) {
+  .card-team__img {
+    width: 354px;;
+    }
+  @mixin img-portrait {
+    display: block;
+    width: 354px;
+    height: 374px;
+    background-size: 354px 374px;
+  }
+    .card-team__img-portrait--produkt-designer {
+    @include img-portrait;
+    background-image: url("../images/john-doe-produkt-designer-1x-tablet.jpg");
+  }
+  .card-team__img-portrait--frontend-developer {
+    @include img-portrait;
+    background-image: url("../images/john-doe-frontend-developer-1x-tablet.jpg");
+  }
+  .card-team__img-portrait--marketing {
+    @include img-portrait;
+    background-image: url("../images/john-doe-marketing-1x-tablet.jpg");
+  }
+  .card-team__img-portrait--ui-designer {
+    @include img-portrait;
+    background-image: url("../images/john-doe-ui-designer-1x-tablet.jpg");
+  }
+  
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .card-team__img-portrait--produkt-designer {
+      background-image: url("../images/john-doe-produkt-designer-2x-tablet.jpg");
+    }
+    .card-team__img-portrait--frontend-developer {
+      background-image: url("../images/john-doe-frontend-developer-2x-tablet.jpg");
+    }
+    .card-team__img-portrait--marketing {
+      background-image: url("../images/john-doe-marketing-2x-tablet.jpg");
+    }
+    .card-team__img-portrait--ui-designer {
+      background-image: url("../images/john-doe-ui-designer-2x-tablet.jpg");
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-what-we-do__image {
     display: block;
     height: 294px;
   }
   .card-team__img {
-    margin: 0 0 0 0;
-    background-color: $background-color-primary;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+  }
+  @mixin img-portrait {
+    display: block;
+    width: 270px;
+    height: 260px;
+    background-size: 270px 260px;
+  }
+  .card-team__img-portrait--produkt-designer {
+    @include img-portrait;
+    background-image: url("../images/john-doe-produkt-designer-1x.jpg");
+  }
+  .card-team__img-portrait--frontend-developer {
+    @include img-portrait;
+    background-image: url("../images/john-doe-frontend-developer-1x.jpg");
+  }
+  .card-team__img-portrait--marketing {
+    @include img-portrait;
+    background-image: url("../images/john-doe-marketing-1x.jpg");
+  }
+  .card-team__img-portrait--ui-designer {
+    @include img-portrait;
+    background-image: url("../images/john-doe-ui-designer-1x.jpg");
+  }
+  
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .card-team__img-portrait--produkt-designer {
+      background-image: url("../images/john-doe-produkt-designer-2x.jpg");
+    }
+    .card-team__img-portrait--frontend-developer {
+      background-image: url("../images/john-doe-frontend-developer-2x.jpg");
+    }
+    .card-team__img-portrait--marketing {
+      background-image: url("../images/john-doe-marketing-2x.jpg");
+    }
+    .card-team__img-portrait--ui-designer {
+      background-image: url("../images/john-doe-ui-designer-2x.jpg");
+    }
   }
   .portfolio__picture {
     margin: 0 0 0 0;
@@ -16,31 +204,19 @@
     transition-duration: var(--t-duration);
     transition-timing-function: var(--t-timing-function);
     transition-property: box-shadow;
-        &:hover{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
-              & .portfolio__overlay {
-    transform: translateX(0);
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      & .portfolio__overlay {
+        transform: translateX(0);
+      }
+    }
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
   }
-}
-        &:focus{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-// &:hover .portfolio__overlay {
-//   transform: translateX(0);
-// }
-  }
-  // .portfolio__picture:hover,
-  // .portfolio__picture:focus {
-   
-  // }
-  // .portfolio__picture:hover .portfolio__overlay {
-  //   transform: translateX(0);
-  // }
   .portfolio__picture-margin {
     padding: 20px 24px;
   }
-
-
-
+}

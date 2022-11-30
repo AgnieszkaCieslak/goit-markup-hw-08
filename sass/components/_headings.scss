@@ -1,32 +1,52 @@
-.heading{
+@mixin heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.card-title__heading {
+  @include heading;
+  margin: 0 auto;
+  width: 365px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $background-color-primary;
+}
+.card-what-we-do__heading {
+ display: none;
+}
+.card-team__heading {
+  @include heading;
+}
+.card-clients__heading {
+  @include heading;
+  margin-bottom:30px;
+}
+.modal__heading {
+  margin-bottom: 12px;
+  display: block;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    }
-    .card-title__heading {
-        margin: 0 auto;
-        width: 696px;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color:$background-color-primary;
-        text-align: center;
-      } 
-           .modal__heading {
-        margin-bottom: 12px;
-        display: block;
-        //  background-color: coral; 
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        text-align: center;
-        color: $color-dark;
-      }
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $color-dark;
+}
 
-     
-     
-    
+@media screen and (min-width: 1200px) {
+  .card-title__heading {
+        width: 696px;
+        font-size: 44px;
+    line-height: 1.36;
+      }
+  .card-what-we-do__heading {
+        @include heading;
+        display: flex;
+       justify-content: center;
+          margin-bottom:50px;
+  }
+ 
+}

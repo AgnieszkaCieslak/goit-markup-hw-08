@@ -27,6 +27,12 @@
         <a class="card-header__logo logo--blue" href="index.html"
           >Web<span class="logo--black">Studio</span></a
         >
+               <button class="mobile-nav__btn pointer"  type="button"  data-menu-open>
+          <svg width="40" height="40">
+          <use
+            href="images/icons.svg#icon-menu_40px"
+          ></use></svg
+        ></button>
         <!-- --------------   NAVIGATION  -------------- -->
         <!-- --------------   LIST-NAV  -------------- -->
         <nav>
@@ -45,10 +51,9 @@
         <!-- --------------  LIST-CONTACT-DETAILS  -------------- -->
         <div>
           <ul class="card-header__list--contact-details">
+            
             <li>
-              <a
-                class="links--mail dark-grey "
-                href="mailto:info@devstudio.com"
+              <a class="links--mail dark-grey" href="mailto:info@devstudio.com"
                 ><svg width="16" height="12">
                   <use
                     href="images/icons.svg#icon-envelope-dark-grey"
@@ -72,7 +77,7 @@
     <main>
       <!----------------- CARD-TITLE & BUTTON ------->
       <section class="card-title">
-        <div class="container">
+                <div class="container">
           <h1 class="card-title__heading">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
@@ -88,9 +93,7 @@
             <li class="list-strengths__box-left">
               <div class="list-strengths__body-icon">
                 <svg class="list-strengths__icon">
-                  <use
-                    href="images/icons.svg#icon-antena"
-                  ></use>
+                  <use href="images/icons.svg#icon-antena"></use>
                 </svg>
               </div>
               <h3 class="list-strengths__subtitle">LOREM IPSUM</h3>
@@ -102,9 +105,7 @@
             <li class="list-strengths__box">
               <div class="list-strengths__body-icon">
                 <svg class="list-strengths__icon">
-                  <use
-                   href="images/icons.svg#icon-clock"
-                  ></use>
+                  <use href="images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="list-strengths__subtitle">LOREM IPSUM</h3>
@@ -116,9 +117,7 @@
             <li class="list-strengths__box">
               <div class="list-strengths__body-icon">
                 <svg class="list-strengths__icon">
-                  <use
-                    href="images/icons.svg#icon-diagram"
-                  ></use>
+                  <use href="images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3 class="list-strengths__subtitle">LOREM IPSUM</h3>
@@ -130,8 +129,7 @@
             <li class="list-strengths__box-right">
               <div class="list-strengths__body-icon">
                 <svg class="list-strengths__icon">
-                  <use href="images/icons.svg#icon-astronaut"
-                  ></use>
+                  <use href="images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="list-strengths__subtitle">LOREM IPSUM</h3>
@@ -146,39 +144,24 @@
       <!-----------------WHAT WE DO ------------------>
       <section>
         <div class="card-what-we-do container">
-          <h2 class="heading">Czym się zajmujemy</h2>
+          <h2 class="card-what-we-do__heading">Czym się zajmujemy</h2>
           <ul class="card-what-we-do__list">
             <li style="position: relative">
-              <img
-                class="card-what-we-do__image"
-                src="images/coding-image.jpg"
-                alt="typing-in-front-of-the-monitor"
-                width="370"
-              />
+              <div class="card-what-we-do__image--codding"></div>
               <div class="card-what-we-do__dimnest" style="position: absolute">
                 Aplikacje komputerowe
               </div>
             </li>
 
             <li style="position: relative">
-              <img
-                class="card-what-we-do__image"
-                src="images/layout-image.jpg"
-                alt="Layout"
-                width="370"
-              />
+              <div class="card-what-we-do__image--layout"></div>
               <div class="card-what-we-do__dimnest" style="position: absolute">
                 Aplikacje mobilne
               </div>
             </li>
 
             <li style="position: relative">
-              <img
-                class="card-what-we-do__image"
-                src="images/design-image.jpg"
-                alt="Design"
-                width="370"
-              />
+              <div class="card-what-we-do__image--design"></div>
               <p class="card-what-we-do__dimnest" style="position: absolute">
                 Rozwiązania graficzne
               </p>
@@ -189,16 +172,12 @@
       <!-----------------OUR TEAM------------------>
       <section class="card-team section">
         <div class="container">
-          <h2 class="heading">Nasz zespół</h2>
+          <h2 class="card-team__heading">Nasz zespół</h2>
           <ul class="card-team__list">
             <!-----------------* 1 *------------------>
             <li>
               <figure class="card-team__img">
-                <img
-                  src="images/john-doe-produkt-designer.jpg"
-                  alt="product-designer"
-                  width="270"
-                />
+                <div class="card-team__img-portrait--produkt-designer"></div>
                 <figcaption class="card-team__container">
                   <h4 class="card-team__title">John Doe</h4>
                   <p class="card-team__subtitle">Product Designer</p>
@@ -246,11 +225,7 @@
             <!-----------------* 2 *------------------>
             <li>
               <figure class="card-team__img">
-                <img
-                  src="images/john-doe-frontend-developer.jpg"
-                  alt="frontend-developer"
-                  width="270"
-                />
+                <div class="card-team__img-portrait--frontend-developer"></div>
                 <figcaption class="card-team__container">
                   <h4 class="card-team__title">John Doe</h4>
                   <p class="card-team__subtitle">Frontend Developer</p>
@@ -298,11 +273,7 @@
             <!-----------------* 3 *------------------>
             <li>
               <figure class="card-team__img">
-                <img
-                  src="images/john-doe-marketing.jpg"
-                  alt="marketing"
-                  width="270"
-                />
+                <div class="card-team__img-portrait--marketing"></div>
                 <figcaption class="card-team__container">
                   <h4 class="card-team__title">John Doe</h4>
                   <p class="card-team__subtitle">Marketing</p>
@@ -350,11 +321,7 @@
             <!-----------------* 4 *------------------>
             <li>
               <figure class="card-team__img">
-                <img
-                  src="images/john-doe-ui-designer.jpg"
-                  alt="ui-designer"
-                  width="270"
-                />
+                <div class="card-team__img-portrait--ui-designer"></div>
                 <figcaption class="card-team__container">
                   <h4 class="card-team__title">John Doe</h4>
                   <p class="card-team__subtitle">UIDesigner</p>
@@ -405,7 +372,7 @@
       <!-- -----------------OUR CLIENTS------------------ -->
       <section class="card-clients">
         <div class="section container">
-          <h2 class="heading">Nasi klienci</h2>
+          <h2 class="card-clients__heading">Nasi klienci</h2>
           <ul class="card-clients__list">
             <li>
               <a class="card-clients__link" href="#">
@@ -450,7 +417,7 @@
     <!-- -----------------FOOTER------------------ -->
     <footer class="card-footer">
       <div class="card-footer__wrapper container">
-        <address>
+        <div class="card-footer__logo-box">
           <a class="logo--blue" href="index.html"
             >Web<span class="logo--white">Studio</span></a
           >
@@ -461,7 +428,9 @@
               </p>
             </li>
             <li class="card-footer__margin">
-              <a class="card-footer__address light-grey" href="mailto:info@example.com"
+              <a
+                class="card-footer__address light-grey"
+                href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
@@ -471,7 +440,7 @@
               >
             </li>
           </ul>
-        </address>
+        </div>
         <!-------------------------- JOIN US ---------------------->
         <div class="card-footer__container-join">
           <p class="card-footer__subtitle">DOŁĄCZ DO NAS</p>
@@ -495,7 +464,7 @@
         </div>
         <!-----------------SUBSCRIBE TO THE NEWSLETTER-------------->
         <div class="card-footer__subscribe">
-          <label class="card-footer__subtitle" for="email-subscribe"
+          <label class="card-footer__subtitle newsletter" for="email-subscribe"
             >Zapisz sie do newslettera</label
           >
           <form
@@ -512,7 +481,7 @@
               placeholder="E-mail"
               required
             />
-            <button class="button card-footer__button pointer" type="submit">
+            <button class="card-footer__button pointer" type="submit">
               Zapisz się<svg width="24" height="24">
                 <use href="images/icons.svg#icon-icon-send"></use>
               </svg>
@@ -621,7 +590,85 @@
         </button>
       </div>
     </div>
-
-    <script src="./js/modal.js"></script>
+    <!---------------------- MODAL WINDOW II ---------------------->
+    <div class="mobile-menu__overley" data-menu>
+      <div class="mobile-menu">
+        <button class="mobile-menu__btn-close" type="button" data-menu-close>
+          <svg class="mobile-menu__icon" width="19px" height="19px">
+            <use href="./images/icons.svg#icon-close_24px"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list-nav">
+          <li class="mobile-menu__item-nav">
+            <a class="mobile-menu__link-nav" href="./index.html"
+              >Agencja</a
+            >
+          </li>
+          <li class="mobile-menu__item-nav">
+            <a class="mobile-menu__link-nav" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item-nav">
+            <a class="mobile-menu__link-nav" href="">Kontakt</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__list-contact">
+          <li class="mobile-menu__list-contact-tel">
+            <a class="mobile-menu__link-contact--tel" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="mobile-menu__list-contact-mailto">
+            <a class="mobile-menu__link-contact--mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__list-social">
+          <li class="mobile-menu__item-social">
+            <a
+              class="mobile-menu__link-social"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu__item-social">
+            <a
+              class="mobile-menu__link-social"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu__item-social">
+            <a
+              class="mobile-menu__link-social"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="facebook"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu__item-social">
+            <a
+              class="mobile-menu__link-social"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="linkedin"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <script src="/js/modal.js"></script>
+    <script src="/js/mobile-menu.js"></script>
   </body>
 </html>

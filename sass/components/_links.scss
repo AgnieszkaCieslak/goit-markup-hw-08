@@ -29,17 +29,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  // .links.blue::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 53px;
-  //   height: 4px;
-  //   top: 45px;
-  //   left: 0px;
-  //   background: var(--background-color-button-active);
-  //   border-radius: 2px;
-  // }
-  .card-team__links {
+    .card-team__links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +51,97 @@
     }
   }
   
+  .card-clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 92px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: $background-color-primary;
+    border: 1px solid $color-grey;
+    fill: $background-color-button-inactive;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+    transition-property: fill, border;
+      &:hover{
+        border: 1px solid $color-blue;
+  fill: $color-blue;
+      }
+        &:focus{
+          border: 1px solid $color-blue;
+  fill: $color-blue;
+        }
+  }
+  .card-footer__social-links {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: $background-color-icon-footer;
+    border-radius: 50%;
+    fill: $background-color-primary;
+    transition-duration: var(--t-duration);
+    transition-timing-function: var(--t-timing-function);
+    transition-property: background-color;
+    &:hover{
+       background-color: $background-color-button-active;
+       &:focus{
+        background-color: $background-color-button-active;
+    }
+  }
+}
+.mobile-menu__link-nav{
+  display: flex;
+  margin-bottom: 38px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color:$color-black;
+  text-decoration: none;
+ &:hover,
+ &:focus{
+  color:$color-blue;
+} }
+%mobile-menu__link-contact{
+  display: flex;
+  margin-bottom: 32px;
+  font-weight: 500;
+     letter-spacing: 0.02em;
+   text-decoration: none;
+    color: $color-dark-grey;
+   &:hover,
+   &:focus{
+    color:$color-blue;
+   } }
+   .mobile-menu__link-contact--tel{
+    @extend %mobile-menu__link-contact;
+font-size: 34px;
+ line-height: 1.17;
+}
+.mobile-menu__link-contact--mail{
+  @extend %mobile-menu__link-contact;
+  font-size: 24px;
+  line-height: 1.16;
+}
+ .mobile-menu__link-social{
+  @extend %mobile-menu__link-contact;
+  font-size: 18px;
+  line-height: 1.22;
+       color: $color-blue;
+}
+
+@media screen and (min-width:768px){
+  .card-clients__link {
+    width: 226px;
+}
+}
+@media screen and (min-width:1200px){
+
   .card-clients__link {
     display: flex;
     justify-content: center;
@@ -104,4 +185,4 @@
     }
   }
 }
-  
+} 

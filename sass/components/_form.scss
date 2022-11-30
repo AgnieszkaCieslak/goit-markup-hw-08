@@ -1,8 +1,16 @@
 .card-footer__form {
     margin-top: 20px;
-    /* background-color: blueviolet; */
+    
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 570px;
+    flex-direction: column;
+       align-items:center;
+  }
+
+  @media screen and (min-width:1200px){
+    .card-footer__form {
+            flex-direction: row;
+      justify-content: space-between;
+      width: 570px;
+      align-items: flex-start;
+    }
   }

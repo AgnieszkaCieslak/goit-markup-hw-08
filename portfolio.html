@@ -22,12 +22,12 @@
   <body>
     <!----------------- HEADER ----------------->
     <header class="header-border">
-<!----------------- LOGO ----MIX Z LOGO i LOGO-COLOR------------->
-          <div class="card-header container">
+      <!----------------- LOGO ----MIX Z LOGO i LOGO-COLOR------------->
+      <div class="card-header container">
         <a class="card-header__logo logo--blue" href="index.html"
           >Web<span class="logo--black">Studio</span></a
         >
-       <!-- --------------   NAVIGATION  -------------- -->
+        <!-- --------------   NAVIGATION  -------------- -->
         <!-- --------------   LIST-NAV  -------------- -->
         <nav>
           <ul class="card-header__list--nav">
@@ -45,13 +45,11 @@
             <li><a class="links dark" href="#">Kontakt</a></li>
           </ul>
         </nav>
-      <!-- --------------  LIST-CONTACT-DETAILS  -------------- -->
+        <!-- --------------  LIST-CONTACT-DETAILS  -------------- -->
         <div>
           <ul class="card-header__list--contact-details">
             <li>
-              <a
-                class="links--mail dark-grey"
-                href="mailto:info@devstudio.com"
+              <a class="links--mail dark-grey" href="mailto:info@devstudio.com"
                 ><svg width="16" height="12">
                   <use
                     href="images/icons.svg#icon-envelope-dark-grey"
@@ -78,42 +76,27 @@
         <div class="container portfolio__buttons-margin">
           <ul class="portfolio__list-button">
             <li>
-              <button
-                class="portfolio__button pointer"
-                type="button"
-              >
+              <button class="portfolio__button pointer" type="button">
                 Wszystkie
               </button>
             </li>
             <li>
-              <button
-                class="portfolio__button pointer"
-                type="button"
-              >
+              <button class="portfolio__button pointer" type="button">
                 Strony
               </button>
             </li>
             <li>
-              <button
-                class="portfolio__button pointer"
-                type="button"
-              >
+              <button class="portfolio__button pointer" type="button">
                 Aplikacje
               </button>
             </li>
             <li>
-              <button
-                class="portfolio__button pointer"
-                type="button"
-              >
+              <button class="portfolio__button pointer" type="button">
                 Dizajn
               </button>
             </li>
             <li>
-              <button
-                class="portfolio__button pointer"
-                type="button"
-              >
+              <button class="portfolio__button pointer" type="button">
                 Marketing
               </button>
             </li>
@@ -135,18 +118,40 @@
                   niezabezpieczone serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/portfolio-technocrack.jpg"
-                alt="website-on-a-laptop"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="images/portfolio-technocrack-1x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-technocrack-2x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-technocrack-1x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-technocrack-2x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <img
+                  srcset="images/portfolio-technocrack-2x-mobile.jpg"
+                  src="images/portfolio-technocrack-1x-mobile.jpg"
+                  alt="website-on-a-laptop"
+                  width="450"
+              /></picture>
             </div>
             <figcaption class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Technocrack</h4>
               <p class="portfolio__picture-subtitle">Strona internetowa</p>
             </figcaption>
           </figure>
-<!------------------- 2 ------------------->
+          <!------------------- 2 ------------------->
           <figure class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
@@ -158,11 +163,33 @@
                   niezabezpieczone serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/portfolio-new-orlean.jpg"
-                alt="two-man-playing-basketball"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="images/portfolio-new-orlean-1x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-new-orlean-2x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-new-orlean-1x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-new-orlean-2x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <img
+                  srcset="images/portfolio-new-orlean-2x-mobile.jpg"
+                  src="images/portfolio-new-orlean-1x-mobile.jpg"
+                  alt="two-man-playing-basketball"
+                  width="450"
+              /></picture>
             </div>
             <figcaption class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">
@@ -171,7 +198,7 @@
               <p class="portfolio__picture-subtitle">Dizajn</p>
             </figcaption>
           </figure>
-<!------------------- 3 ------------------->
+          <!------------------- 3 ------------------->
           <figure class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
@@ -183,18 +210,40 @@
                   niezabezpieczone serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/portfolio-seafood.jpg"
-                alt="logo-of-the-restaurant-Seafood"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="images/portfolio-seafood-1x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-seafood-2x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-seafood-1x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-seafood-2x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <img
+                  srcset="images/portfolio-seafood-2x-mobile.jpg"
+                  src="images/portfolio-seafood-1x-mobile.jpg"
+                  alt="logo-of-the-restaurant-Seafood"
+                  width="450"
+              /></picture>
             </div>
             <figcaption class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Restauracja Seafood</h4>
               <p class="portfolio__picture-subtitle">Aplikacja</p>
             </figcaption>
           </figure>
-<!------------------- 4 ------------------->
+          <!------------------- 4 ------------------->
           <figure class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
@@ -206,18 +255,40 @@
                   niezabezpieczone serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/portfolio-prime.jpg"
-                alt="headphones"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="images/portfolio-prime-1x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-prime-2x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-prime-1x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-prime-2x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <img
+                  srcset="images/portfolio-prime-2x-mobile.jpg"
+                  src="images/portfolio-prime-1x-mobile.jpg"
+                  alt="headphones"
+                  width="450"
+              /></picture>
             </div>
             <figcaption class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Projekt Prime</h4>
               <p class="portfolio__picture-subtitle">Marketing</p>
             </figcaption>
           </figure>
-<!------------------- 5 ------------------->
+          <!------------------- 5 ------------------->
           <figure class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
@@ -229,18 +300,40 @@
                   niezabezpieczone serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/portfolio-boxes.jpg"
-                alt="two-cardboard-boxes"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="images/portfolio-boxes-1x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-boxes-2x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-boxes-1x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-boxes-2x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <img
+                  srcset="images/portfolio-boxes-2x-mobile.jpg"
+                  src="images/portfolio-boxes-1x-mobile.jpg"
+                  alt="two-cardboard-boxes"
+                  width="450"
+              /></picture>
             </div>
             <figcaption class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Projekt Boxes</h4>
               <p class="portfolio__picture-subtitle">Aplikacja</p>
             </figcaption>
           </figure>
-<!------------------- 6 ------------------->
+          <!------------------- 6 ------------------->
           <figure class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
@@ -252,11 +345,33 @@
                   niezabezpieczone serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/portfolio-inspirations.jpg"
-                alt="monitor"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="images/portfolio-inspirations-1x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-inspirations-2x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-inspirations-1x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-inspirations-2x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <img
+                  srcset="images/portfolio-inspirations-2x-mobile.jpg"
+                  src="images/portfolio-inspirations-1x-mobile.jpg"
+                  alt="monitor"
+                  width="450"
+              /></picture>
             </div>
             <figcaption class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">
@@ -265,7 +380,7 @@
               <p class="portfolio__picture-subtitle">Strona internetowa</p>
             </figcaption>
           </figure>
-<!------------------- 7 ------------------->
+          <!------------------- 7 ------------------->
           <figure class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
@@ -277,18 +392,40 @@
                   niezabezpieczone serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/portfolio-magazyn.jpg"
-                alt="colorful-magazine"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="images/portfolio-magazyn-1x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-magazyn-2x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-magazyn-1x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-magazyn-2x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <img
+                  srcset="images/portfolio-magazyn-2x-mobile.jpg"
+                  src="images/portfolio-magazyn-1x-mobile.jpg"
+                  alt="colorful-magazine"
+                  width="450"
+              /></picture>
             </div>
             <figcaption class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Magazyn Limited Edition</h4>
               <p class="portfolio__picture-subtitle">Dizajn</p>
             </figcaption>
           </figure>
-<!------------------- 8 ------------------->
+          <!------------------- 8 ------------------->
           <figure class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
@@ -300,14 +437,40 @@
                   niezabezpieczone serwery konkurencji
                 </p>
               </div>
-              <img src="images/portfolio-lab.jpg" alt="paper-tag" width="370" />
+              <picture>
+                <source
+                  srcset="images/portfolio-lab-1x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-lab-2x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-lab-1x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-lab-2x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <img
+                  srcset="images/portfolio-lab-2x-mobile.jpg"
+                  src="images/portfolio-lab-1x-mobile.jpg"
+                  alt="paper-tag"
+                  width="450"
+              /></picture>
             </div>
             <figcaption class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Projekt LAB</h4>
               <p class="portfolio__picture-subtitle">Marketing</p>
             </figcaption>
           </figure>
-<!------------------- 9 ------------------->
+          <!------------------- 9 ------------------->
           <figure class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
@@ -319,11 +482,33 @@
                   niezabezpieczone serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/portfolio-growing-business.jpg"
-                alt="typing-on-a-laptop"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="images/portfolio-growing-business-1x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-growing-business-2x-tablet.jpg"
+                  media="(min-width:768px)"
+                  width="354"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-growing-business-1x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <source
+                  srcset="images/portfolio-growing-business-2x.jpg"
+                  media="(min-width:1200px)"
+                  width="370"
+                  type="image/jpg" />
+                <img
+                  srcset="images/portfolio-growing-business-2x-mobile.jpg"
+                  src="images/portfolio-growing-business-1x-mobile.jpg"
+                  alt="typing-on-a-laptop"
+                  width="450"
+              /></picture>
             </div>
             <figcaption class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Growing Business</h4>
@@ -347,7 +532,9 @@
               </p>
             </li>
             <li class="card-footer__margin">
-              <a class="card-footer__address light-grey" href="mailto:info@example.com"
+              <a
+                class="card-footer__address light-grey"
+                href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>

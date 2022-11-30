@@ -17,3 +17,8 @@
 .logo--white {
   color: $color-white;
 }
+
+@media screen and (min-width:1200px){
+  .logo--blue{
+text-align: left;
+}}

@@ -1,40 +1,144 @@
-.card-header__list{
+.card-header__list--nav,
+.card-header__list--contact-details{
+  display: none;
+}
+@mixin card-header__list{
+  display: flex;
+  padding: 0;
+  }
+  .list-strengths {
+   gap:30px;
+    
+  }
+    .list-strengths__body-icon {
+        margin-bottom: 30px;
+    padding: 25px 100px;
+    background-color: $background-color-secondary;
+    }
+    
+  .list-strengths__icon {
+    width: 70px;
+    height: 70px;
+    margin:0 calc(50% - 35px);
+  }
+  .card-team__list {
+   display: flex;
+    flex-wrap:wrap;
+  }
+  .card-team__social-list {
+    padding-inline: 32px;
+        padding-bottom: 24px;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+  }
+  .card-clients__list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 210px 210px;
+    gap: 30px;
+  }
+  .card-footer__list {
+    margin-top: 20px;
+   text-align: center;
+  }
+  .card-footer__social-list {
+    margin-left: calc(50% - 103px);
+    padding-bottom:60px;
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+  }
+.mobile-menu__list-nav{
 display: flex;
-padding: 0;
+flex-direction: column;
+margin-bottom: 264px;
 }
-.card-header__list--nav {
-  @extend .card-header__list;
-  gap: 50px;
-  margin-left: 93px;
+.mobile-menu__list-contact{
+  margin-bottom: 32px;
 }
+.mobile-menu__list-social{
+  align-items: flex-end;
+display: flex;
+justify-content:space-between;
+}
+.portfolio__list-button {
+   display: grid;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  grid-template-columns: 20vw 20vw 20vw;
+  column-gap: 8px;
+  row-gap: 15px;
+  justify-content: left;
+}
+@media screen and (min-width: 768px) {
+     .card-header__list--nav {
+      @include card-header__list;
+      gap: 50px;
+      margin-left: 83px;
+    }
+    .card-header__list--contact-details {
+      @include card-header__list;
+   flex-direction: column;
+    gap: 10px;
+       margin-left: 101px;
+    }
+    .list-strengths {
+      display: grid;
+      grid-template-columns: 354px 354px;
+      gap:30px;
+           }
+           .card-team__list {
+            margin-top: 0;
+            display: grid; 
+            grid-template-columns: 354px 354px;
+            column-gap:30px;
+          }
+          .card-clients__list {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 226px 226px 226px;
+           gap: 30px;
+          }
+          .card-footer__logo{
+            margin-left:0;
+          }
+          .portfolio__list-button {
+           display: flex;
+             margin-bottom: 40px;
+             justify-content: center;
+        }
+   }
+@media screen and (min-width: 1200px) {
+  .card-header__list--nav {
+    @include card-header__list;
+    gap: 60px;
+        margin-left: 93px;
+  }
 .card-header__list--contact-details {
-  @extend .card-header__list;
-display: flex;
+  @include card-header__list;
+  flex-direction: row;
 gap: 30px;
-padding: 0;
 margin-left: 345px;
 }
-
 .list-strengths {
     display: flex;
     justify-content: space-around;
   }
     .list-strengths__body-icon {
     margin-bottom: 30px;
-    padding: 25px 100px;
+        padding: 25px 100px;
     background-color: $background-color-secondary;
   }
   .list-strengths__icon {
     width: 70px;
     height: 70px;
   }
-
    .card-what-we-do__list {
     margin-top: 50px;
     display: flex;
     gap: 30px;
   }
-
   .card-team__list {
     margin-top: 50px;
     display: flex;
@@ -58,9 +162,12 @@ margin-left: 345px;
   }
 
   .card-footer__list {
-    margin-top: 20px;
+        text-align: left;
+    width: 246px;
+
   }
   .card-footer__social-list {
+    margin-left:0;
     display: flex;
     justify-content: space-between;
     width: 206px;
@@ -69,4 +176,6 @@ margin-left: 345px;
   .portfolio__list-button {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
   }
+}
