@@ -27,12 +27,11 @@
         <a class="card-header__logo logo--blue" href="index.html"
           >Web<span class="logo--black">Studio</span></a
         >
-               <button class="mobile-nav__btn pointer"  type="button"  data-menu-open>
+        <button class="mobile-nav__btn pointer" type="button" data-menu-open>
           <svg width="40" height="40">
-          <use
-            href="images/icons.svg#icon-menu_40px"
-          ></use></svg
-        ></button>
+            <use href="images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
         <!-- --------------   NAVIGATION  -------------- -->
         <!-- --------------   LIST-NAV  -------------- -->
         <nav>
@@ -51,7 +50,6 @@
         <!-- --------------  LIST-CONTACT-DETAILS  -------------- -->
         <div>
           <ul class="card-header__list--contact-details">
-            
             <li>
               <a class="links--mail dark-grey" href="mailto:info@devstudio.com"
                 ><svg width="16" height="12">
@@ -77,11 +75,15 @@
     <main>
       <!----------------- CARD-TITLE & BUTTON ------->
       <section class="card-title">
-                <div class="container">
+        <div class="container">
           <h1 class="card-title__heading">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button class="card-title__button button  pointer" type="button" data-modal-open>
+          <button
+            class="card-title__button button pointer"
+            type="button"
+            data-modal-open
+          >
             Zamów usługe
           </button>
         </div>
@@ -557,10 +559,13 @@
             class="modal__statement pointer"
             for="regulations-and-privacy-policy"
           >
-            Oświadczam iż akceptuję&nbsp;<a class="modal__regulations-policy" href="#"
+            Oświadczam iż akceptuję&nbsp;<a
+              class="modal__regulations-policy"
+              href="#"
               >Regulamin</a
             >&nbsp;i&nbsp;
-            <a class="modal__regulations-policy" href="#">Politykę Prywatności.</a
+            <a class="modal__regulations-policy" href="#"
+              >Politykę Prywatności.</a
             ><span class="modal__square pointer"></span>
             <input
               class="modal__checkbox"
@@ -574,16 +579,16 @@
               </svg>
             </span>
           </label>
-          <button class="button modal__button pointer" type="submit" name="send">
+          <button
+            class="button modal__button pointer"
+            type="submit"
+            name="send"
+          >
             Wyślij
           </button>
         </form>
 
-        <button
-          class="modal__cross pointer"
-          type="button"
-          data-modal-close
-        >
+        <button class="modal__cross pointer" type="button" data-modal-close>
           <svg class="modal__button-cross">
             <use href="images/icons.svg#icon-X"></use>
           </svg>
@@ -600,12 +605,12 @@
         </button>
         <ul class="mobile-menu__list-nav">
           <li class="mobile-menu__item-nav">
-            <a class="mobile-menu__link-nav" href="./index.html"
-              >Agencja</a
-            >
+            <a class="mobile-menu__link-nav" href="./index.html">Agencja</a>
           </li>
           <li class="mobile-menu__item-nav">
-            <a class="mobile-menu__link-nav" href="./portfolio.html">Portfolio</a>
+            <a class="mobile-menu__link-nav" href="./portfolio.html"
+              >Portfolio</a
+            >
           </li>
           <li class="mobile-menu__item-nav">
             <a class="mobile-menu__link-nav" href="">Kontakt</a>
@@ -618,7 +623,9 @@
             >
           </li>
           <li class="mobile-menu__list-contact-mailto">
-            <a class="mobile-menu__link-contact--mail" href="mailto:info@devstudio.com"
+            <a
+              class="mobile-menu__link-contact--mail"
+              href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
@@ -668,7 +675,7 @@
       </div>
     </div>
     <!-- GIT HUB MNIE WKURZA -->
-    <script src="/js/modal.js"></script>
-    <script src="/js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
