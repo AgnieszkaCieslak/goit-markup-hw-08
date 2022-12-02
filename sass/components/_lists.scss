@@ -97,7 +97,7 @@ margin-bottom:55%;
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: max(30px);
     justify-content: center;
   }
     .card-footer__logo {

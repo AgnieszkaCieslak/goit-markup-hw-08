@@ -57,6 +57,9 @@
     align-items: center;
    width: 210px;
     height: 92px;
+    // gap: 30px;
+    // gap: 6.25vw;
+    gap: min(30px);
     box-sizing: border-box;
     border-radius: 4px;
     background-color: $background-color-primary;
@@ -138,6 +141,7 @@ font-size: 34px;
 
 @media screen and (min-width:768px){
   .card-clients__link {
+    width: 29vw;
     max-width: 226px;
 }
 }

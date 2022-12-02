@@ -136,20 +136,8 @@ textarea[id="comment"].modal__input-details::-webkit-input-placeholder {
     left: 15px;
   }
   .modal__input-details {
-    display: flex;
-    justify-content: center;
-    width: 448px;
+    max-width: 448px;
     height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    resize: none;
-    outline-color: $color-blue;
-    transition-property: border-color;
-    transition-duration: var(--t-duration);
-    transition-timing-function: var(--t-timing-function);
-    &:hover {
-      border-color: $color-blue;
-    }
   }
   .single-line-input {
     padding-left: 42px;

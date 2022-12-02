@@ -725,27 +725,8 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
     left: 15px;
   }
   .modal__input-details {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 448px;
+    max-width: 448px;
     height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    resize: none;
-    outline-color: #2196f3;
-    -webkit-transition-property: border-color;
-    transition-property: border-color;
-    -webkit-transition-duration: var(--t-duration);
-            transition-duration: var(--t-duration);
-    -webkit-transition-timing-function: var(--t-timing-function);
-            transition-timing-function: var(--t-timing-function);
-  }
-  .modal__input-details:hover {
-    border-color: #2196f3;
   }
   .single-line-input {
     padding-left: 42px;
@@ -1125,6 +1106,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
           align-items: center;
   width: 210px;
   height: 92px;
+  gap: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
@@ -1224,6 +1206,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 @media screen and (min-width: 768px) {
   .card-clients__link {
+    width: 29vw;
     max-width: 226px;
   }
 }
@@ -1527,7 +1510,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }

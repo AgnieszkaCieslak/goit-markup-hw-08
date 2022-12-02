@@ -1,29 +1,29 @@
 .list-strengths__description {
-    margin-top: 10px;
-    line-height: 1.71;
-    color: $color-dark-grey;
-      }
-      .modal__statement {
-        margin-top: 20px;
-        margin-bottom: 30px;
-        padding-left: 25px;
-        position: relative;
-        /* background-color:aquamarine; */
-        display: flex;
-        flex-direction: row;
-      font-size: 12px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        font-weight: 400;
-        line-height: 1.71;
-        color: $color-dark-grey;
-      }
-      .modal__regulations-policy {
-        color: $color-blue;
-      }
+  margin-top: 10px;
+  line-height: 1.71;
+  color: $color-dark-grey;
+}
+.modal__statement {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 25px;
+  position: relative;
+  /* background-color:aquamarine; */
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 400;
+  line-height: 1.71;
+  color: $color-dark-grey;
+}
+.modal__regulations-policy {
+  color: $color-blue;
+}
 @media screen and (min-width: 1200px) {
   .modal__statement {
-       font-size:14px;
+    font-size: 14px;
     justify-content: center;
-     }
   }
+}
