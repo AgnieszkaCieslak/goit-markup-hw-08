@@ -103,17 +103,17 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -145,9 +145,6 @@ ul {
 }
 
 .card-footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -158,8 +155,6 @@ ul {
 .card-footer__subscribe {
   margin-left: 0;
   margin-top: 0;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .portfolio__gallery {
@@ -202,6 +197,7 @@ ul {
     padding-left: 174px;
   }
   .card-footer__subscribe {
+    width: 768px;
     margin: 0 calc(50% - 225px);
     margin-top: 0;
     -ms-flex-item-align: end;
@@ -338,11 +334,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 3px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  padding: 0;
+  margin: 0 auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 200px;
@@ -350,9 +343,9 @@ ul {
 }
 
 .mobile-nav__btn {
-  position: relative;
-  top: 4px;
-  left: 270px;
+  position: absolute;
+  top: 10px;
+  right: 0;
   background-color: transparent;
   border: none;
   outline: none;
@@ -374,9 +367,9 @@ ul {
 .mobile-menu__btn-close {
   width: 20px;
   height: 20px;
-  top: -30px;
-  left: 400px;
-  position: relative;
+  top: 15px;
+  right: 15px;
+  position: absolute;
   background-color: transparent;
   border: none;
   outline: none;
@@ -486,7 +479,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20vw;
+  max-width: 20vw;
   height: 38px;
   font-family: inherit;
   font-weight: 500;
@@ -520,6 +513,11 @@ ul {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (max-width: 360px) {
+  .portfolio__button {
+    font-size: 4vw;
+  }
+}
 @media screen and (min-width: 768px) {
   .mobile-nav__btn {
     display: none;
@@ -536,27 +534,21 @@ ul {
 }
 .card-footer__form {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {
   .card-footer__form {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 570px;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -577,7 +569,8 @@ ul {
 .card-footer__input {
   padding-left: 15px;
   margin-bottom: 20px;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   color: #fff;
   background-color: #2f303a;
@@ -650,7 +643,8 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 370px;
+  width: 75vw;
+  max-width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -785,13 +779,9 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   display: none;
 }
 
-.list-strengths {
-  gap: 30px;
-}
-
 .list-strengths__body-icon {
   margin-bottom: 30px;
-  padding: 25px 100px;
+  padding-block: 25px;
   background-color: #f5f4fa;
 }
 
@@ -801,16 +791,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   margin: 0 calc(50% - 35px);
 }
 
-.card-team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .card-team__social-list {
-  padding-inline: 32px;
   padding-bottom: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -823,9 +804,15 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 .card-clients__list {
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: 210px 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card-footer__list {
@@ -853,7 +840,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 264px;
+  margin-bottom: 55%;
 }
 
 .mobile-menu__list-contact {
@@ -914,21 +901,32 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
     gap: 30px;
   }
   .card-team__list {
-    margin-top: 0;
-    display: grid;
-    grid-template-columns: 354px 354px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
   }
   .card-clients__list {
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: 226px 226px 226px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .card-footer__logo {
     margin-left: 0;
+  }
+  .card-footer__social-list {
+    padding-bottom: 0;
   }
   .portfolio__list-button {
     display: -webkit-box;
@@ -1182,7 +1180,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 38px;
+  margin-bottom: 7.91%;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -1226,7 +1224,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 @media screen and (min-width: 768px) {
   .card-clients__link {
-    width: 226px;
+    max-width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1299,7 +1297,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0 auto;
-  width: 365px;
+  max-width: 365px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
@@ -1464,7 +1462,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 .modal {
   padding: 40px;
-  width: 450px;
+  max-width: 450px;
   height: 609px;
   position: absolute;
   left: 50%;
@@ -1481,10 +1479,10 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 .mobile-menu__overley {
   position: fixed;
   top: 0;
-  left: calc(50% - 240px);
+  left: 0;
   z-index: 10;
-  width: 480px;
-  height: 796px;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1571,8 +1569,8 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 .portfolio__blue-box {
   margin-inline: auto;
   position: relative;
-  width: 450px;
-  height: 294px;
+  max-width: 450px;
+  max-height: 294px;
   background-color: #2196f3;
   overflow: hidden;
 }
@@ -1587,7 +1585,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1601,8 +1599,8 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 .portfolio__overlay-text {
   margin: 0;
-  padding: 77px 24px;
-  width: 450px;
+  padding: 16% 5%;
+  max-width: 100%;
   font-size: 18px;
   line-height: 1.56;
   color: #fff;
@@ -1628,7 +1626,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
     transition-property: transform;
     transition-property: transform, -webkit-transform;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1718,103 +1716,21 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 0px 0px 4px 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 450px;
+  max-width: 450px;
 }
 
-.card-team__img-portrait--produkt-designer {
-  width: 450px;
-  height: 460px;
-  background-size: 450px 460px;
-  background-image: url("../images/john-doe-produkt-designer-1x-mobile.jpg");
+.team-image {
+  max-width: 100%;
 }
 
-.card-team__img-portrait--frontend-developer {
-  width: 450px;
-  height: 460px;
-  background-size: 450px 460px;
-  background-image: url("../images/john-doe-frontend-developer-1x-mobile.jpg");
+.what-we-do-image {
+  max-width: 370px;
 }
 
-.card-team__img-portrait--marketing {
-  width: 450px;
-  height: 460px;
-  background-size: 450px 460px;
-  background-image: url("../images/john-doe-marketing-1x-mobile.jpg");
-}
-
-.card-team__img-portrait--ui-designer {
-  width: 450px;
-  height: 460px;
-  background-size: 450px 460px;
-  background-image: url("../images/john-doe-ui-designer-1x-mobile.jpg");
-}
-
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .card-team__img-portrait--produkt-designer {
-    background-image: url("../images/john-doe-produkt-designer-2x-mobile.jpg");
-  }
-  .card-team__img-portrait--frontend-developer {
-    background-image: url("../images/john-doe-frontend-developer-2x-mobile.jpg");
-  }
-  .card-team__img-portrait--marketing {
-    background-image: url("../images/john-doe-marketing-2x-mobile.jpg");
-  }
-  .card-team__img-portrait--ui-designer {
-    background-image: url("../images/john-doe-ui-designer-2x-mobile.jpg");
-  }
-}
-.card-what-we-do__image--codding {
-  width: 370px;
-  height: 294px;
-  background-size: 370px 294px;
-  background-image: url("../images/coding-image-1x.jpg");
-}
-
-.card-what-we-do__image--layout {
-  width: 370px;
-  height: 294px;
-  background-size: 370px 294px;
-  background-image: url("../images/layout-image-1x.jpg");
-}
-
-.card-what-we-do__image--design {
-  width: 370px;
-  height: 294px;
-  background-size: 370px 294px;
-  background-image: url("../images/design-image-1x.jpg");
-}
-
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .card-what-we-do__image--codding {
-    width: 370px;
-    height: 294px;
-    background-size: 370px 294px;
-    background-image: url("../images/coding-image-2x.jpg");
-  }
-  .card-what-we-do__image--layout {
-    width: 370px;
-    height: 294px;
-    background-size: 370px 294px;
-    background-image: url("../images/layout-image-2x.jpg");
-  }
-  .card-what-we-do__image--design {
-    width: 370px;
-    height: 294px;
-    background-size: 370px 294px;
-    background-image: url("../images/design-image-2x.jpg");
-  }
-}
 .portfolio__picture {
   margin: 0 0 0 0;
   border-bottom: 1px solid #eeeeee;
-  width: 450px;
+  max-width: 450px;
   -webkit-transition-duration: var(--t-duration);
           transition-duration: var(--t-duration);
   -webkit-transition-timing-function: var(--t-timing-function);
@@ -1837,55 +1753,17 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio__gallery-img {
+  max-width: 100%;
+}
+
 .portfolio__picture-margin {
   padding: 20px 24px;
 }
 
 @media screen and (min-width: 768px) {
   .card-team__img {
-    width: 354px;
-  }
-  .card-team__img-portrait--produkt-designer {
-    display: block;
-    width: 354px;
-    height: 374px;
-    background-size: 354px 374px;
-    background-image: url("../images/john-doe-produkt-designer-1x-tablet.jpg");
-  }
-  .card-team__img-portrait--frontend-developer {
-    display: block;
-    width: 354px;
-    height: 374px;
-    background-size: 354px 374px;
-    background-image: url("../images/john-doe-frontend-developer-1x-tablet.jpg");
-  }
-  .card-team__img-portrait--marketing {
-    display: block;
-    width: 354px;
-    height: 374px;
-    background-size: 354px 374px;
-    background-image: url("../images/john-doe-marketing-1x-tablet.jpg");
-  }
-  .card-team__img-portrait--ui-designer {
-    display: block;
-    width: 354px;
-    height: 374px;
-    background-size: 354px 374px;
-    background-image: url("../images/john-doe-ui-designer-1x-tablet.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .card-team__img-portrait--produkt-designer {
-    background-image: url("../images/john-doe-produkt-designer-2x-tablet.jpg");
-  }
-  .card-team__img-portrait--frontend-developer {
-    background-image: url("../images/john-doe-frontend-developer-2x-tablet.jpg");
-  }
-  .card-team__img-portrait--marketing {
-    background-image: url("../images/john-doe-marketing-2x-tablet.jpg");
-  }
-  .card-team__img-portrait--ui-designer {
-    background-image: url("../images/john-doe-ui-designer-2x-tablet.jpg");
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1894,52 +1772,8 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
     height: 294px;
   }
   .card-team__img {
-    width: 270px;
+    max-width: 270px;
   }
-  .card-team__img-portrait--produkt-designer {
-    display: block;
-    width: 270px;
-    height: 260px;
-    background-size: 270px 260px;
-    background-image: url("../images/john-doe-produkt-designer-1x.jpg");
-  }
-  .card-team__img-portrait--frontend-developer {
-    display: block;
-    width: 270px;
-    height: 260px;
-    background-size: 270px 260px;
-    background-image: url("../images/john-doe-frontend-developer-1x.jpg");
-  }
-  .card-team__img-portrait--marketing {
-    display: block;
-    width: 270px;
-    height: 260px;
-    background-size: 270px 260px;
-    background-image: url("../images/john-doe-marketing-1x.jpg");
-  }
-  .card-team__img-portrait--ui-designer {
-    display: block;
-    width: 270px;
-    height: 260px;
-    background-size: 270px 260px;
-    background-image: url("../images/john-doe-ui-designer-1x.jpg");
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .card-team__img-portrait--produkt-designer {
-    background-image: url("../images/john-doe-produkt-designer-2x.jpg");
-  }
-  .card-team__img-portrait--frontend-developer {
-    background-image: url("../images/john-doe-frontend-developer-2x.jpg");
-  }
-  .card-team__img-portrait--marketing {
-    background-image: url("../images/john-doe-marketing-2x.jpg");
-  }
-  .card-team__img-portrait--ui-designer {
-    background-image: url("../images/john-doe-ui-designer-2x.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
   .portfolio__picture {
     margin: 0 0 0 0;
     border-bottom: 1px solid #eeeeee;
@@ -1965,8 +1799,6 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
     -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-}
-@media screen and (min-width: 1200px) {
   .portfolio__picture-margin {
     padding: 20px 24px;
   }
@@ -1989,7 +1821,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 .mobile-menu__icon {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 0;
 }
 
@@ -2022,7 +1854,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   background-repeat: no-repeat;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .card-title {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-2x-mobile.jpg);
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-2x-mobile.jpg);

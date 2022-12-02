@@ -112,7 +112,7 @@
       <section>
         <div class="container portfolio__gallery">
           <!------------------- 1 ------------------->
-          <figure class="portfolio__picture">
+          <div class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
                 <p class="portfolio__overlay-text">
@@ -123,41 +123,35 @@
                   niezabezpieczone serwery konkurencji
                 </p>
               </div>
-              <picture>
+              <picture class="card-portfolio__img">
                 <source
-                  srcset="images/portfolio-technocrack-1x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-technocrack-1x.jpg,
+                    /images/portfolio-technocrack-2x.jpg
+                  "
+                  media="(min-width:1200px)" />
                 <source
-                  srcset="images/portfolio-technocrack-2x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-technocrack-1x-tablet.jpg,
+                    /images/portfolio-technocrack-2x-tablet.jpg
+                  "
+                  media="(min-width:768px)" />
                 <source
-                  srcset="images/portfolio-technocrack-1x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
-                <source
-                  srcset="images/portfolio-technocrack-2x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
+                  srcset="/images/portfolio-technocrack-2x-mobile.jpg"
+                  media="(min-width:480px)" />
                 <img
-                  srcset="images/portfolio-technocrack-2x-mobile.jpg"
-                  src="images/portfolio-technocrack-1x-mobile.jpg"
+                  class="portfolio__gallery-img"
+                  src="/images/portfolio-technocrack-1x-mobile.jpg"
                   alt="website-on-a-laptop"
-                  width="450"
               /></picture>
             </div>
-            <figcaption class="portfolio__picture-margin">
+            <div class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Technocrack</h4>
               <p class="portfolio__picture-subtitle">Strona internetowa</p>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
           <!------------------- 2 ------------------->
-          <figure class="portfolio__picture">
+          <div class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
                 <p class="portfolio__overlay-text">
@@ -170,41 +164,35 @@
               </div>
               <picture>
                 <source
-                  srcset="images/portfolio-new-orlean-1x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-new-orlean-1x.jpg,
+                    /images/portfolio-new-orlean-2x.jpg
+                  "
+                  media="(min-width:1200px)" />
                 <source
-                  srcset="images/portfolio-new-orlean-2x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-new-orlean-1x-tablet.jpg,
+                    /images/portfolio-new-orlean-2x-tablet.jpg
+                  "
+                  media="(min-width:768px)" />
                 <source
-                  srcset="images/portfolio-new-orlean-1x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
-                <source
-                  srcset="images/portfolio-new-orlean-2x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
+                  srcset="/images/portfolio-new-orlean-2x-mobile.jpg"
+                  media="(min-width:480px)" />
                 <img
-                  srcset="images/portfolio-new-orlean-2x-mobile.jpg"
+                  class="portfolio__gallery-img"
                   src="images/portfolio-new-orlean-1x-mobile.jpg"
                   alt="two-man-playing-basketball"
-                  width="450"
               /></picture>
             </div>
-            <figcaption class="portfolio__picture-margin">
+            <div class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">
                 Grafika New Orlean vs Golden Star
               </h4>
               <p class="portfolio__picture-subtitle">Dizajn</p>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
           <!------------------- 3 ------------------->
-          <figure class="portfolio__picture">
+          <div class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
                 <p class="portfolio__overlay-text">
@@ -217,39 +205,33 @@
               </div>
               <picture>
                 <source
-                  srcset="images/portfolio-seafood-1x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-seafood-1x.jpg,
+                    /images/portfolio-seafood-2x.jpg
+                  "
+                  media="(min-width:1200px)" />
                 <source
-                  srcset="images/portfolio-seafood-2x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-seafood-1x-tablet.jpg,
+                    /images/portfolio-seafood-2x-tablet.jpg
+                  "
+                  media="(min-width:768px)" />
                 <source
-                  srcset="images/portfolio-seafood-1x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
-                <source
-                  srcset="images/portfolio-seafood-2x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
+                  srcset="/images/portfolio-seafood-2x-mobile.jpg"
+                  media="(min-width:480px)" />
                 <img
-                  srcset="images/portfolio-seafood-2x-mobile.jpg"
+                  class="portfolio__gallery-img"
                   src="images/portfolio-seafood-1x-mobile.jpg"
                   alt="logo-of-the-restaurant-Seafood"
-                  width="450"
               /></picture>
             </div>
-            <figcaption class="portfolio__picture-margin">
+            <div class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Restauracja Seafood</h4>
               <p class="portfolio__picture-subtitle">Aplikacja</p>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
           <!------------------- 4 ------------------->
-          <figure class="portfolio__picture">
+          <div class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
                 <p class="portfolio__overlay-text">
@@ -262,39 +244,33 @@
               </div>
               <picture>
                 <source
-                  srcset="images/portfolio-prime-1x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-prime-1x.jpg,
+                    /images/portfolio-prime-2x.jpg
+                  "
+                  media="(min-width:1200px)" />
                 <source
-                  srcset="images/portfolio-prime-2x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-prime-1x-tablet.jpg,
+                    /images/portfolio-prime-2x-tablet.jpg
+                  "
+                  media="(min-width:768px)" />
                 <source
-                  srcset="images/portfolio-prime-1x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
-                <source
-                  srcset="images/portfolio-prime-2x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
+                  srcset="/images/portfolio-prime-2x-mobile.jpg"
+                  media="(min-width:480px)" />
                 <img
-                  srcset="images/portfolio-prime-2x-mobile.jpg"
+                  class="portfolio__gallery-img"
                   src="images/portfolio-prime-1x-mobile.jpg"
                   alt="headphones"
-                  width="450"
               /></picture>
             </div>
-            <figcaption class="portfolio__picture-margin">
+            <div class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Projekt Prime</h4>
               <p class="portfolio__picture-subtitle">Marketing</p>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
           <!------------------- 5 ------------------->
-          <figure class="portfolio__picture">
+          <div class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
                 <p class="portfolio__overlay-text">
@@ -307,39 +283,33 @@
               </div>
               <picture>
                 <source
-                  srcset="images/portfolio-boxes-1x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-boxes-1x.jpg,
+                    /images/portfolio-boxes-2x.jpg
+                  "
+                  media="(min-width:1200px)" />
                 <source
-                  srcset="images/portfolio-boxes-2x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-boxes-1x-tablet.jpg,
+                    /images/portfolio-boxes-2x-tablet.jpg
+                  "
+                  media="(min-width:768px)" />
                 <source
-                  srcset="images/portfolio-boxes-1x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
-                <source
-                  srcset="images/portfolio-boxes-2x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
+                  srcset="/images/portfolio-boxes-2x-mobile.jpg"
+                  media="(min-width:480px)" />
                 <img
-                  srcset="images/portfolio-boxes-2x-mobile.jpg"
+                  class="portfolio__gallery-img"
                   src="images/portfolio-boxes-1x-mobile.jpg"
                   alt="two-cardboard-boxes"
-                  width="450"
               /></picture>
             </div>
-            <figcaption class="portfolio__picture-margin">
+            <div class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Projekt Boxes</h4>
               <p class="portfolio__picture-subtitle">Aplikacja</p>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
           <!------------------- 6 ------------------->
-          <figure class="portfolio__picture">
+          <div class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
                 <p class="portfolio__overlay-text">
@@ -352,41 +322,35 @@
               </div>
               <picture>
                 <source
-                  srcset="images/portfolio-inspirations-1x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-inspirations-1x.jpg,
+                    /images/portfolio-inspirations-2x.jpg
+                  "
+                  media="(min-width:1200px)" />
                 <source
-                  srcset="images/portfolio-inspirations-2x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-inspirations-1x-tablet.jpg,
+                    /images/portfolio-inspirations-2x-tablet.jpg
+                  "
+                  media="(min-width:768px)" />
                 <source
-                  srcset="images/portfolio-inspirations-1x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
-                <source
-                  srcset="images/portfolio-inspirations-2x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
+                  srcset="/images/portfolio-inspirations-2x-mobile.jpg"
+                  media="(min-width:480px)" />
                 <img
-                  srcset="images/portfolio-inspirations-2x-mobile.jpg"
+                  class="portfolio__gallery-img"
                   src="images/portfolio-inspirations-1x-mobile.jpg"
                   alt="monitor"
-                  width="450"
               /></picture>
             </div>
-            <figcaption class="portfolio__picture-margin">
+            <div class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">
                 Inspiration has no Borders
               </h4>
               <p class="portfolio__picture-subtitle">Strona internetowa</p>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
           <!------------------- 7 ------------------->
-          <figure class="portfolio__picture">
+          <div class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
                 <p class="portfolio__overlay-text">
@@ -399,39 +363,33 @@
               </div>
               <picture>
                 <source
-                  srcset="images/portfolio-magazyn-1x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-magazyn-1x.jpg,
+                    /images/portfolio-magazyn-2x.jpg
+                  "
+                  media="(min-width:1200px)" />
                 <source
-                  srcset="images/portfolio-magazyn-2x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-magazyn-1x-tablet.jpg,
+                    /images/portfolio-magazyn-2x-tablet.jpg
+                  "
+                  media="(min-width:768px)" />
                 <source
-                  srcset="images/portfolio-magazyn-1x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
-                <source
-                  srcset="images/portfolio-magazyn-2x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
+                  srcset="/images/portfolio-magazyn-2x-mobile.jpg"
+                  media="(min-width:480px)" />
                 <img
-                  srcset="images/portfolio-magazyn-2x-mobile.jpg"
+                  class="portfolio__gallery-img"
                   src="images/portfolio-magazyn-1x-mobile.jpg"
                   alt="colorful-magazine"
-                  width="450"
               /></picture>
             </div>
-            <figcaption class="portfolio__picture-margin">
+            <div class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Magazyn Limited Edition</h4>
               <p class="portfolio__picture-subtitle">Dizajn</p>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
           <!------------------- 8 ------------------->
-          <figure class="portfolio__picture">
+          <div class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
                 <p class="portfolio__overlay-text">
@@ -444,39 +402,33 @@
               </div>
               <picture>
                 <source
-                  srcset="images/portfolio-lab-1x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    images/portfolio-lab-1x.jpg,
+                    /images/portfolio-lab-2x.jpg
+                  "
+                  media="(min-width:1200px)" />
                 <source
-                  srcset="images/portfolio-lab-2x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-lab-1x-tablet.jpg,
+                    /images/portfolio-lab-2x-tablet.jpg
+                  "
+                  media="(min-width:768px)" />
                 <source
-                  srcset="images/portfolio-lab-1x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
-                <source
-                  srcset="images/portfolio-lab-2x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
+                  srcset="/images/portfolio-lab-2x-mobile.jpg"
+                  media="(min-width:480px)" />
                 <img
-                  srcset="images/portfolio-lab-2x-mobile.jpg"
+                  class="portfolio__gallery-img"
                   src="images/portfolio-lab-1x-mobile.jpg"
                   alt="paper-tag"
-                  width="450"
               /></picture>
             </div>
-            <figcaption class="portfolio__picture-margin">
+            <div class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Projekt LAB</h4>
               <p class="portfolio__picture-subtitle">Marketing</p>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
           <!------------------- 9 ------------------->
-          <figure class="portfolio__picture">
+          <div class="portfolio__picture">
             <div class="portfolio__blue-box" style="position: relative">
               <div class="portfolio__overlay">
                 <p class="portfolio__overlay-text">
@@ -489,37 +441,31 @@
               </div>
               <picture>
                 <source
-                  srcset="images/portfolio-growing-business-1x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-growing-business-1x.jpg,
+                    /images/portfolio-growing-business-2x.jpg
+                  "
+                  media="(min-width:1200px)" />
                 <source
-                  srcset="images/portfolio-growing-business-2x-tablet.jpg"
-                  media="(min-width:768px)"
-                  width="354"
-                  type="image/jpg" />
+                  srcset="
+                    /images/portfolio-growing-business-1x-tablet.jpg,
+                    /images/portfolio-growing-business-2x-tablet.jpg
+                  "
+                  media="(min-width:768px)" />
                 <source
-                  srcset="images/portfolio-growing-business-1x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
-                <source
-                  srcset="images/portfolio-growing-business-2x.jpg"
-                  media="(min-width:1200px)"
-                  width="370"
-                  type="image/jpg" />
+                  srcset="/images/portfolio-growing-business-2x-mobile.jpg"
+                  media="(min-width:480px)" />
                 <img
-                  srcset="images/portfolio-growing-business-2x-mobile.jpg"
+                  class="portfolio__gallery-img"
                   src="images/portfolio-growing-business-1x-mobile.jpg"
                   alt="typing-on-a-laptop"
-                  width="450"
               /></picture>
             </div>
-            <figcaption class="portfolio__picture-margin">
+            <div class="portfolio__picture-margin">
               <h4 class="portfolio__picture-title">Growing Business</h4>
               <p class="portfolio__picture-subtitle">Aplikacja</p>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -8,7 +8,7 @@
 .card-title__heading {
   @include heading;
   margin: 0 auto;
-  width: 365px;
+  max-width: 365px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;

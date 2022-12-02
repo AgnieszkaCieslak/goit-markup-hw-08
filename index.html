@@ -149,21 +149,52 @@
           <h2 class="card-what-we-do__heading">Czym się zajmujemy</h2>
           <ul class="card-what-we-do__list">
             <li style="position: relative">
-              <div class="card-what-we-do__image--codding"></div>
+              <picture>
+                <source
+                  srcset="/images/coding-image-2x.jpg"
+                  media="(min-width:1200px)"
+                />
+
+                <img
+                  class="what-we-do-image"
+                  src="/coding-image-1x.jpg"
+                  alt="codding"
+                />
+              </picture>
               <div class="card-what-we-do__dimnest" style="position: absolute">
                 Aplikacje komputerowe
               </div>
             </li>
 
             <li style="position: relative">
-              <div class="card-what-we-do__image--layout"></div>
+              <picture>
+                <source
+                  srcset="/images/design-image-2x.jpg"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="what-we-do-image"
+                  src="/images/design-image-1x.jpg"
+                  alt="codding"
+                />
+              </picture>
               <div class="card-what-we-do__dimnest" style="position: absolute">
                 Aplikacje mobilne
               </div>
             </li>
 
             <li style="position: relative">
-              <div class="card-what-we-do__image--design"></div>
+              <picture>
+                <source
+                  srcset="/images/layout-image-2x.jpg"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="what-we-do-image"
+                  src="/images/layout-image-1x.jpg"
+                  alt="codding"
+                />
+              </picture>
               <p class="card-what-we-do__dimnest" style="position: absolute">
                 Rozwiązania graficzne
               </p>
@@ -177,10 +208,34 @@
           <h2 class="card-team__heading">Nasz zespół</h2>
           <ul class="card-team__list">
             <!-----------------* 1 *------------------>
-            <li>
-              <figure class="card-team__img">
-                <div class="card-team__img-portrait--produkt-designer"></div>
-                <figcaption class="card-team__container">
+            <li class="card-team__list-item">
+              <div class="card-team__img">
+                <picture>
+                  <source
+                    srcset="
+                      /images/john-doe-produkt-designer-1x.jpg,
+                      /images/john-doe-produkt-designer-2x.jpg
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/john-doe-produkt-designer-1x-tablet.jpg,
+                      /images/john-doe-produkt-designer-2x-tablet.jpg
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="/images/john-doe-produkt-designer-2x-mobile.jpg"
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="team-image"
+                    src="/images/john-doe-produkt-designer-1x-mobile.jpg"
+                    alt="portrait-John-Doe"
+                  />
+                </picture>
+                <div class="card-team__container">
                   <h4 class="card-team__title">John Doe</h4>
                   <p class="card-team__subtitle">Product Designer</p>
                   <ul class="card-team__social-list">
@@ -221,14 +276,38 @@
                       ></a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
             <!-----------------* 2 *------------------>
-            <li>
-              <figure class="card-team__img">
-                <div class="card-team__img-portrait--frontend-developer"></div>
-                <figcaption class="card-team__container">
+            <li class="card-team__list-item">
+              <div class="card-team__img">
+                <picture>
+                  <source
+                    srcset="
+                      /images/john-doe-frontend-developer-1x.jpg,
+                      /images/john-doe-frontend-developer-2x.jpg
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/john-doe-frontend-developer-1x-tablet.jpg,
+                      /images/john-doe-frontend-developer-2x-tablet.jpg
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="/images/john-doe-frontend-developer-2x-mobile.jpg"
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="team-image"
+                    src="/images/john-doe-frontend-developer-1x-mobile.jpg"
+                    alt="portrait-John-Doe"
+                  />
+                </picture>
+                <div class="card-team__container">
                   <h4 class="card-team__title">John Doe</h4>
                   <p class="card-team__subtitle">Frontend Developer</p>
                   <ul class="card-team__social-list">
@@ -269,14 +348,38 @@
                       ></a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
             <!-----------------* 3 *------------------>
-            <li>
-              <figure class="card-team__img">
-                <div class="card-team__img-portrait--marketing"></div>
-                <figcaption class="card-team__container">
+            <li class="card-team__list-item">
+              <div class="card-team__img">
+                <picture>
+                  <source
+                    srcset="
+                      /images/john-doe-marketing-1x.jpg,
+                      /images/john-doe-marketing-2x.jpg
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/john-doe-marketing-1x-tablet.jpg,
+                      /images/john-doe-marketing-2x-tablet.jpg
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="/images/john-doe-marketing-2x-mobile.jpg"
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="team-image"
+                    src="/images/john-doe-marketing-1x-mobile.jpg"
+                    alt="portrait-John-Doe"
+                  />
+                </picture>
+                <div class="card-team__container">
                   <h4 class="card-team__title">John Doe</h4>
                   <p class="card-team__subtitle">Marketing</p>
                   <ul class="card-team__social-list">
@@ -317,14 +420,38 @@
                       ></a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
             <!-----------------* 4 *------------------>
-            <li>
-              <figure class="card-team__img">
-                <div class="card-team__img-portrait--ui-designer"></div>
-                <figcaption class="card-team__container">
+            <li class="card-team__list-item">
+              <div class="card-team__img">
+                <picture>
+                  <source
+                    srcset="
+                      /images/john-doe-ui-designer-1x.jpg,
+                      /images/john-doe-ui-designer-2x.jpg
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/john-doe-ui-designer-1x-tablet.jpg,
+                      /images/john-doe-ui-designer-2x-tablet.jpg
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="/images/john-doe-ui-designer-2x-mobile.jpg"
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    class="team-image"
+                    src="/images/john-doe-ui-designer-1x-mobile.jpg"
+                    alt="portrait-John-Doe"
+                  />
+                </picture>
+                <div class="card-team__container">
                   <h4 class="card-team__title">John Doe</h4>
                   <p class="card-team__subtitle">UIDesigner</p>
                   <ul class="card-team__social-list">
@@ -365,8 +492,8 @@
                       ></a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
           </ul>
         </div>

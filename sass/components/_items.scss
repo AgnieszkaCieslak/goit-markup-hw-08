@@ -1,7 +1,13 @@
 .mobile-menu__item-nav{
     display: flex;
-margin-bottom: 38px;
+    margin-bottom: 38px;
 }
+@media screen and (min-width:768px){
+    .card-team__list-item{
+      padding:0;  
+    }
 
+
+}
 
 

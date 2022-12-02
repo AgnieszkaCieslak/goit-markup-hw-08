@@ -3,19 +3,16 @@
   padding: 0 15px;
   margin: 0 auto;
   @media screen and (min-width: 480px) {
-    width: 480px;
-    // background-color: rgb(217, 250, 217);
-  }
+    max-width: 480px;
+     }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
-    // background-color: rgb(223, 239, 255);
-  }
+    max-width: 768px;
+      }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
-    // background-color: rgb(197, 255, 255);
-  }
+    max-width: 1200px;
+     }
 }
 .section {
   @media screen and (max-width: 1199px) {
@@ -40,15 +37,14 @@
   margin-top: 30px;
   }
 .card-footer__wrapper {
-  display: flex;
+  // display: flex;
   flex-direction: column;
   text-align: center;
 }
 .card-footer__subscribe {
-  margin-left: 0;
+   margin-left: 0;
   margin-top: 0;
-  align-self: flex-end;
-}
+ }
 .portfolio__gallery {
   display: flex;
   flex-direction: column;
@@ -78,6 +74,7 @@
        padding-left:174px;
   }
   .card-footer__subscribe {
+  width: 768px;
     margin: 0 calc(50% - 225px);
     margin-top: 0;
     align-self: flex-end;
