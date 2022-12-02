@@ -1,9 +1,9 @@
 .modal__checkbox {
-    visibility: hidden;
-    &:checked + span svg {
-      z-index: 5;
-      fill: $color-blue;
-      stroke: $color-blue;
-      stroke-width: 2px;
-    }
+  visibility: hidden;
+  &:checked + span svg {
+    z-index: 5;
+    fill: $color-blue;
+    stroke: $color-blue;
+    stroke-width: 2px;
   }
+}

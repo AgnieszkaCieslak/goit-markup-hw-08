@@ -20,7 +20,7 @@
 .card-footer__button {
   @include button;
   padding: 0;
-  margin:0 auto;
+  margin: 0 auto;
   justify-content: space-around;
   width: 200px;
   height: 50px;
@@ -46,10 +46,10 @@
 .mobile-menu__btn-close {
   width: 20px;
   height: 20px;
-  top:15px;
-  right:15px;
+  top: 15px;
+  right: 15px;
   position: absolute;
-  background-color:transparent;
+  background-color: transparent;
   border: none;
   outline: none;
   fill: $color-black;
@@ -112,11 +112,11 @@
 }
 .portfolio__button {
   @include button;
- max-width: 20vw;
+  max-width: 20vw;
   height: 38px;
   font-family: inherit;
   font-weight: 500;
-    line-height: 1.62;
+  line-height: 1.62;
   color: $color-dark;
   background: $background-color-secondary;
   border-radius: 4px;
@@ -139,7 +139,7 @@
   }
 }
 @media screen and (max-width: 360px) {
-  .portfolio__button{
+  .portfolio__button {
     font-size: 4vw;
   }
 }

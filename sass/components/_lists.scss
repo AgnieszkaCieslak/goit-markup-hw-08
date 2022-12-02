@@ -47,8 +47,8 @@
 .mobile-menu__list-nav {
   display: flex;
   flex-direction: column;
-    // margin-bottom: 264px;
-margin-bottom:55%;
+  // margin-bottom: 264px;
+  margin-bottom: 55%;
 }
 .mobile-menu__list-contact {
   margin-bottom: 32px;
@@ -68,7 +68,6 @@ margin-bottom:55%;
   justify-content: left;
 }
 @media screen and (max-width: 767px) {
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -88,10 +87,10 @@ margin-bottom:55%;
     grid-template-columns: 354px 354px;
     gap: 30px;
   }
-  .card-team__list{
+  .card-team__list {
     display: flex;
     flex-wrap: wrap;
-    column-gap:30px;
+    column-gap: 30px;
   }
   .card-clients__list {
     margin-top: 30px;
@@ -100,12 +99,12 @@ margin-bottom:55%;
     gap: max(30px);
     justify-content: center;
   }
-    .card-footer__logo {
+  .card-footer__logo {
     margin-left: 0;
   }
   .card-footer__social-list {
-        padding-bottom: 0;
-      }
+    padding-bottom: 0;
+  }
   .portfolio__list-button {
     display: flex;
     margin-bottom: 40px;

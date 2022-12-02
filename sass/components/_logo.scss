@@ -1,24 +1,25 @@
 %logo {
-    font-family: "Raleway";
+  font-family: "Raleway";
   font-weight: 700;
   font-style: normal;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-    text-decoration: none;
+  text-decoration: none;
 }
-.logo--blue{
+.logo--blue {
   @extend %logo;
   color: $color-blue;
 }
 .logo--black {
-   color: $color-black;
+  color: $color-black;
 }
 .logo--white {
   color: $color-white;
 }
 
-@media screen and (min-width:1200px){
-  .logo--blue{
-text-align: left;
-}}
+@media screen and (min-width: 1200px) {
+  .logo--blue {
+    text-align: left;
+  }
+}
