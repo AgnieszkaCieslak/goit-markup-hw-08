@@ -21,7 +21,7 @@
   </head>
   <body>
     <!----------------- HEADER ----------------->
-    <header class="header-border">
+    <header class="header-underline">
       <!----------------- LOGO ----MIX Z LOGO i LOGO-COLOR------------->
       <div class="card-header container">
         <a class="card-header__logo logo--blue" href="index.html"
@@ -78,7 +78,7 @@
     <main class="portfolio">
       <!-------------------  BUTON`s ------------------->
       <section>
-        <div class="container portfolio__buttons-margin">
+        <div class="container">
           <ul class="portfolio__list-button">
             <li>
               <button class="portfolio__button pointer" type="button">
@@ -472,13 +472,13 @@
     <!-------------------     FOOTER  ------------------->
     <footer class="card-footer">
       <div class="card-footer__wrapper container">
-        <address>
+        <div class="card-footer__logo-box">
           <a class="logo--blue" href="index.html"
             >Web<span class="logo--white">Studio</span></a
           >
           <ul class="card-footer__list">
             <li>
-              <p class="card-footer__adress white">
+              <p class="card-footer__address white">
                 m. Warszawa, Aleje Jerozolimskie 21
               </p>
             </li>
@@ -495,7 +495,7 @@
               >
             </li>
           </ul>
-        </address>
+        </div>
         <!-------------------------- JOIN US ---------------------->
         <div class="card-footer__container-join">
           <p class="card-footer__subtitle">DOŁĄCZ DO NAS</p>
@@ -519,7 +519,7 @@
         </div>
         <!-----------------SUBSCRIBE TO THE NEWSLETTER-------------->
         <div class="card-footer__subscribe">
-          <label class="card-footer__subtitle" for="email-subscribe"
+          <label class="card-footer__subtitle newsletter" for="email-subscribe"
             >Zapisz sie do newslettera</label
           >
           <form
@@ -536,7 +536,7 @@
               placeholder="E-mail"
               required
             />
-            <button class="button card-footer__button pointer" type="submit">
+            <button class="card-footer__button pointer" type="submit">
               Zapisz się<svg width="24" height="24">
                 <use href="images/icons.svg#icon-icon-send"></use>
               </svg>

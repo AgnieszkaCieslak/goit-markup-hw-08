@@ -1,5 +1,11 @@
 .card-footer {
-    padding-block: 60px;
-    font-style: inherit;
-    background-color:$background-color-footer;
+  padding-block: 60px;
+  max-width: 767px;
+  font-style: inherit;
+  background-color: $background-color-footer;
+}
+@media screen and (min-width: 768px) {
+  .card-footer {
+    max-width: 100%;
   }
+}

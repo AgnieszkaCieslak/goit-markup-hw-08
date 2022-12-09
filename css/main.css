@@ -6,24 +6,6 @@
           transform: rotate(180deg);
 }
 
-@media screen and (min-width: 768px) {
-  .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-}
 @media screen {
   .blue {
     color: #2196f3;
@@ -103,17 +85,17 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -132,16 +114,13 @@ ul {
   padding: 16px 0;
 }
 
-.list-strengths__box {
-  margin-top: 30px;
-}
-
-.list-strengths__box-right {
-  margin-top: 30px;
-}
-
+.list-strengths__box-left,
+.list-strengths__box,
+.list-strengths__box-right,
 .card-team__container {
   margin-top: 30px;
+  max-width: 767px;
+  width: 100%;
 }
 
 .card-footer__wrapper {
@@ -149,12 +128,30 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 1600px;
   text-align: center;
 }
 
+.card-footer__logo-box,
+.card-footer__container-join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 767px;
+}
+
 .card-footer__subscribe {
-  margin-left: 0;
   margin-top: 0;
+  margin-left: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 767px;
 }
 
 .portfolio__gallery {
@@ -166,17 +163,21 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+  max-width: 767px;
 }
 
 @media screen and (min-width: 768px) {
   .card-header__logo {
     padding: 26px 0;
   }
-  .list-strengths__box {
+  .list-strengths__box-left,
+.list-strengths__box {
     margin-top: 0;
+    width: 354px;
   }
   .list-strengths__box-right {
-    margin-top: 0;
+    margin-top: 30px;
+    width: 354px;
   }
   .card-footer__wrapper {
     display: -webkit-box;
@@ -197,9 +198,8 @@ ul {
     padding-left: 174px;
   }
   .card-footer__subscribe {
-    width: 768px;
     margin: 0 calc(50% - 225px);
-    margin-top: 0;
+    width: 768px;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
@@ -215,7 +215,6 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -225,21 +224,19 @@ ul {
   .card-team__container {
     margin-top: 30px;
   }
+  .list-strengths__box-left {
+    max-width: 270px;
+  }
+  .list-strengths__box,
+.list-strengths__box-right {
+    margin-top: 0;
+    max-width: 270px;
+  }
   .card-footer__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
   .card-footer__logo-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
   }
@@ -248,24 +245,18 @@ ul {
   }
   .card-footer__subscribe {
     margin: 0 78px;
-    margin-top: 0;
     -ms-flex-item-align: start;
         align-self: flex-start;
+    max-width: 1600px;
   }
   .portfolio__gallery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 30px;
+    max-width: 1600px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .logo--blue {
@@ -479,10 +470,14 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 20vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
   height: 38px;
   font-family: inherit;
   font-weight: 500;
+  font-size: clamp(6px, 3.13vw, 16px);
+  letter-spacing: clamp(0.01em, 0.5vw, 0.06em);
   line-height: 1.62;
   color: #212121;
   background: #f5f4fa;
@@ -513,20 +508,14 @@ ul {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 360px) {
-  .portfolio__button {
-    font-size: 4vw;
-  }
-}
 @media screen and (min-width: 768px) {
   .mobile-nav__btn {
     display: none;
   }
+  .portfolio__button {
+    width: 15vw;
+  }
 }
-.portfolio__button {
-  width: 15vw;
-}
-
 @media screen and (min-width: 1200px) {
   .portfolio__button {
     max-width: 10vw;
@@ -546,9 +535,6 @@ ul {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 570px;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -569,8 +555,8 @@ ul {
 .card-footer__input {
   padding-left: 15px;
   margin-bottom: 20px;
-  width: 100%;
   max-width: 450px;
+  width: 100%;
   height: 50px;
   color: #fff;
   background-color: #2f303a;
@@ -684,65 +670,8 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   .card-footer__input {
     width: 358px;
   }
-  .modal__input-group {
-    position: relative;
-    margin-bottom: 10px;
-    -webkit-transition-property: fill;
-    transition-property: fill;
-    -webkit-transition-duration: var(--t-duration);
-            transition-duration: var(--t-duration);
-    -webkit-transition-timing-function: var(--t-timing-function);
-            transition-timing-function: var(--t-timing-function);
-  }
-  .modal__input-group:hover {
-    fill: #2196f3;
-    border-color: #2196f3;
-  }
-  .modal__input-group:focus {
-    fill: #2196f3;
-    border-color: #2196f3;
-  }
-  .modal__input-group:focus-within {
-    fill: #2196f3;
-  }
-  .modal__input-group-comment {
-    position: relative;
-  }
-  .modal__input-group-comment:hover {
-    fill: #2196f3;
-    border-color: #2196f3;
-  }
-  .modal__input-group-comment:focus {
-    fill: #2196f3;
-    border-color: #2196f3;
-  }
-  .modal__input-group-comment:focus-within {
-    fill: #2196f3;
-  }
-  .modal__input-icon {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-  }
   .modal__input-details {
     max-width: 448px;
-    height: 120px;
-  }
-  .single-line-input {
-    padding-left: 42px;
-    height: 40px;
-  }
-  textarea[id=comment].modal__input-details::-webkit-input-placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-  }
-  .multiple-line-input {
-    margin-bottom: 0px;
-    padding-top: 12px;
-    padding-left: 16px;
   }
 }
 .modal__checkbox {
@@ -763,6 +692,8 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 .list-strengths__body-icon {
   margin-bottom: 30px;
   padding-block: 25px;
+  max-width: 767px;
+  width: 100%;
   background-color: #f5f4fa;
 }
 
@@ -770,6 +701,18 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   width: 70px;
   height: 70px;
   margin: 0 calc(50% - 35px);
+}
+
+.card-team__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 767px;
+  width: 100%;
 }
 
 .card-team__social-list {
@@ -781,6 +724,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 767px;
 }
 
 .card-clients__list {
@@ -790,10 +734,10 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 30px;
 }
 
 .card-footer__list {
@@ -814,6 +758,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 }
 
 .mobile-menu__list-nav {
+  margin-bottom: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -821,7 +766,6 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 55%;
 }
 
 .mobile-menu__list-contact {
@@ -829,30 +773,27 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 }
 
 .mobile-menu__list-social {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  margin-right: 10px;
+  padding-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 10px;
+}
+.mobile-menu__list-social > .mobile-menu__item-social:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .portfolio__list-button {
-  display: grid;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-bottom: 40px;
-  grid-template-columns: 20vw 20vw 20vw;
-  -webkit-column-gap: 8px;
-     -moz-column-gap: 8px;
-          column-gap: 8px;
-  row-gap: 15px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 17vw 17vw 17vw;
+  gap: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -861,47 +802,55 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
-    gap: 50px;
     margin-left: 83px;
+    width: 100%;
+    gap: 50px;
   }
   .card-header__list--contact-details {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0;
+    margin-right: 15px;
+    margin-left: 101px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
     gap: 10px;
-    margin-left: 101px;
   }
   .list-strengths {
-    display: grid;
-    grid-template-columns: 354px 354px;
-    gap: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1199px;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .list-strengths > .list-strengths__box:nth-of-type(odd) {
+    margin-top: 30px;
   }
   .card-team__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
-  }
-  .card-clients__list {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1199px;
   }
   .card-footer__logo {
     margin-left: 0;
@@ -913,7 +862,6 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 40px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -925,50 +873,51 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
-    gap: 60px;
     margin-left: 93px;
+    gap: 60px;
   }
   .card-header__list--contact-details {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0;
+    margin-left: 345px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 30px;
-    margin-left: 345px;
   }
   .list-strengths {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    row-gap: 30px;
+  }
+  .list-strengths > .list-strengths__box:nth-of-type(odd) {
+    margin-top: 0;
   }
   .list-strengths__body-icon {
-    margin-bottom: 30px;
+    max-width: 270px;
     padding: 25px 100px;
-    background-color: #f5f4fa;
-  }
-  .list-strengths__icon {
-    width: 70px;
-    height: 70px;
   }
   .card-what-we-do__list {
     margin-top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 30px;
   }
   .card-team__list {
     margin-top: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     font-size: 16px;
+    max-width: 1600px;
     line-height: 1.18;
     gap: 30px;
   }
@@ -976,18 +925,12 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
     padding-inline: 32px;
     padding-top: 16px;
     padding-bottom: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .card-clients__list {
     margin-top: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1001,21 +944,8 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   }
   .card-footer__social-list {
     margin-left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 206px;
   }
   .portfolio__list-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-bottom: 50px;
   }
 }
@@ -1041,7 +971,8 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 161px;
+  font-size: 12px;
+  width: 138px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1054,13 +985,14 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 130px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 113px;
+  font-size: 12px;
 }
 
 .card-team__links {
@@ -1106,7 +1038,6 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
           align-items: center;
   width: 210px;
   height: 92px;
-  gap: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
@@ -1199,6 +1130,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 }
 
 .mobile-menu__link-social {
+  margin-bottom: 0;
   font-size: 18px;
   line-height: 1.22;
   color: #2196f3;
@@ -1206,71 +1138,22 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 @media screen and (min-width: 768px) {
   .card-clients__link {
-    width: 29vw;
     max-width: 226px;
+    width: 29vw;
   }
 }
 @media screen and (min-width: 1200px) {
+  .links--mail {
+    font-size: 14px;
+    width: 161px;
+  }
+  .links--tel {
+    margin-right: 0;
+    width: 130px;
+    font-size: 14px;
+  }
   .card-clients__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 170px;
-    height: 92px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 4px;
-    background-color: #ffffff;
-    border: 1px solid #afb1b8;
-    fill: #afb1b8;
-    -webkit-transition-duration: var(--t-duration);
-            transition-duration: var(--t-duration);
-    -webkit-transition-timing-function: var(--t-timing-function);
-            transition-timing-function: var(--t-timing-function);
-    -webkit-transition-property: fill, border;
-    transition-property: fill, border;
-  }
-  .card-clients__link:hover {
-    border: 1px solid #2196f3;
-    fill: #2196f3;
-  }
-  .card-clients__link:focus {
-    border: 1px solid #2196f3;
-    fill: #2196f3;
-  }
-  .card-footer__social-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    fill: #ffffff;
-    -webkit-transition-duration: var(--t-duration);
-            transition-duration: var(--t-duration);
-    -webkit-transition-timing-function: var(--t-timing-function);
-            transition-timing-function: var(--t-timing-function);
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-  }
-  .card-footer__social-links:hover {
-    background-color: #2196f3;
-  }
-  .card-footer__social-links:hover:focus {
-    background-color: #2196f3;
   }
 }
 .card-title__heading {
@@ -1299,6 +1182,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  font-size: 28px;
 }
 
 .card-clients__heading {
@@ -1308,6 +1192,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+  font-size: 28px;
 }
 
 .modal__heading {
@@ -1322,7 +1207,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 @media screen and (min-width: 1200px) {
   .card-title__heading {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -1340,8 +1225,18 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
             justify-content: center;
     margin-bottom: 50px;
   }
+  .card-clients__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+  }
 }
 .card-team__title {
+  display: block;
+  max-width: 767px;
   font-weight: 500;
 }
 
@@ -1354,20 +1249,24 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 }
 
 .list-strengths__subtitle {
+  max-width: 768px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .card-team__subtitle {
   margin-top: 10px;
   margin-bottom: 16px;
+  display: block;
+  max-width: 767px;
   color: #757575;
 }
 
 .card-footer__subtitle {
-  padding-top: 60px;
   margin-bottom: 20px;
+  padding-top: 60px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -1375,6 +1274,9 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 }
 
 @media screen and (min-width: 768px) {
+  .list-strengths__subtitle {
+    text-align: left;
+  }
   .card-footer__subtitle {
     padding-top: 12px;
   }
@@ -1400,6 +1302,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   margin-top: 10px;
   line-height: 1.71;
   color: #757575;
+  max-width: 767px;
 }
 
 .modal__statement {
@@ -1533,18 +1436,6 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
           transition-timing-function: var(--t-timing-function);
 }
 
-@media screen and (min-width: 768px) {
-  .backdrop {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .backdrop {
-    width: 100%;
-    height: 100%;
-  }
-}
 .card-what-we-do__dimnest {
   display: none;
 }
@@ -1593,7 +1484,6 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 @media screen and (min-width: 768px) {
   .portfolio__blue-box {
     width: 354px;
-    height: 294px;
   }
   .portfolio__overlay-text {
     padding: 49px 24px;
@@ -1608,7 +1498,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
     width: 370px;
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
-    bottom: 4px;
+    bottom: 0;
     font-weight: 700;
     line-height: 1.14;
     -webkit-box-pack: center;
@@ -1622,7 +1512,6 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
   }
   .portfolio__blue-box {
     width: 370px;
-    height: 294px;
   }
   .portfolio__overlay-text {
     padding-top: 49px;
@@ -1636,11 +1525,11 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 .card-team__img {
   margin: 30px 0 0 0;
+  max-width: 767px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 0px 0px 4px 4px;
-  max-width: 450px;
 }
 
 .team-image {
@@ -1648,7 +1537,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 }
 
 .what-we-do-image {
-  max-width: 370px;
+  display: none;
 }
 
 .portfolio__picture {
@@ -1687,44 +1576,31 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 @media screen and (min-width: 768px) {
   .card-team__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 354px;
+    width: 100%;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .card-what-we-do__image {
     display: block;
-    height: 294px;
+    width: 370px;
   }
   .card-team__img {
+    margin: 0;
     max-width: 270px;
   }
   .portfolio__picture {
-    margin: 0 0 0 0;
-    border-bottom: 1px solid #eeeeee;
     width: 370px;
-    -webkit-transition-duration: var(--t-duration);
-            transition-duration: var(--t-duration);
-    -webkit-transition-timing-function: var(--t-timing-function);
-            transition-timing-function: var(--t-timing-function);
-    -webkit-transition-property: -webkit-box-shadow;
-    transition-property: -webkit-box-shadow;
-    transition-property: box-shadow;
-    transition-property: box-shadow, -webkit-box-shadow;
-  }
-  .portfolio__picture:hover {
-    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-  .portfolio__picture:hover .portfolio__overlay {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  .portfolio__picture:focus {
-    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-  .portfolio__picture-margin {
-    padding: 20px 24px;
   }
 }
 .social-media__icon {
@@ -1769,10 +1645,10 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 .card-title {
   margin: 0 auto;
   padding-block: 118px;
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-1x-mobile.jpg);
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-1x-mobile.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-1x-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-1x-mobile.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1780,36 +1656,34 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .card-title {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-2x-mobile.jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-2x-mobile.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-2x-mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-2x-mobile.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .card-title {
-    max-width: 768px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-1x-tablet.jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-1x-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-1x-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-1x-tablet.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .card-title {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-2x-tablet.jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-2x-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-2x-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-2x-tablet.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .card-title {
     padding-block: 200px;
-    max-width: 1600px;
     height: 600px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-1x.jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-1x.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .card-title {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-2x.jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/photo-background-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photo-background-2x.jpg);
   }
 }
 .card-what-we-do {
@@ -1818,24 +1692,48 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 
 @media screen and (min-width: 1200px) {
   .card-what-we-do {
-    display: block;
     padding-bottom: 94px;
+    display: block;
   }
 }
 .card-team {
+  max-width: 767px;
+  width: 100%;
   text-align: center;
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 768px) {
+  .card-team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1199px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-team {
+    max-width: 1600px;
+  }
+}
 .card-footer {
   padding-block: 60px;
+  max-width: 767px;
   font-style: inherit;
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 768px) {
+  .card-footer {
+    max-width: 100%;
+  }
+}
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {

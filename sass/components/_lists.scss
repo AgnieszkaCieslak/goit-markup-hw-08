@@ -6,32 +6,37 @@
   display: flex;
   padding: 0;
 }
-
 .list-strengths__body-icon {
   margin-bottom: 30px;
   padding-block: 25px;
-  // padding-inline:100px;
+  max-width: 767px;
+  width: 100%;
   background-color: $background-color-secondary;
 }
-
 .list-strengths__icon {
   width: 70px;
   height: 70px;
-  // margin:0 auto;
   margin: 0 calc(50% - 35px);
+}
+.card-team__list {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 767px;
+  width: 100%;
 }
 .card-team__social-list {
   padding-bottom: 24px;
   display: flex;
   gap: 10px;
   justify-content: center;
+  max-width: 767px;
 }
 .card-clients__list {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
+  gap: 30px;
 }
 .card-footer__list {
   margin-top: 20px;
@@ -45,59 +50,65 @@
   width: 206px;
 }
 .mobile-menu__list-nav {
+  margin-bottom: auto;
   display: flex;
   flex-direction: column;
-  // margin-bottom: 264px;
-  margin-bottom: 55%;
 }
 .mobile-menu__list-contact {
   margin-bottom: 32px;
 }
 .mobile-menu__list-social {
-  align-items: flex-end;
+  margin-right: 10px;
+  padding-right: 10px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 10px;
+
+  & > .mobile-menu__item-social:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+    margin-right: 10px;
+  }
 }
 .portfolio__list-button {
-  display: grid;
-  flex-wrap: wrap;
   margin-bottom: 40px;
-  grid-template-columns: 20vw 20vw 20vw;
-  column-gap: 8px;
-  row-gap: 15px;
-  justify-content: left;
-}
-@media screen and (max-width: 767px) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 17vw 17vw 17vw;
+  gap: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .card-header__list--nav {
     @include card-header__list;
-    gap: 50px;
     margin-left: 83px;
+    width: 100%;
+    gap: 50px;
   }
   .card-header__list--contact-details {
     @include card-header__list;
-    flex-direction: column;
-    gap: 10px;
+    margin-right: 15px;
     margin-left: 101px;
+    flex-direction: column;
+    justify-content: right;
+    gap: 10px;
   }
   .list-strengths {
-    display: grid;
-    grid-template-columns: 354px 354px;
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1199px;
+    margin: 0 auto;
+    justify-content: space-between;
+    & > .list-strengths__box:nth-of-type(odd) {
+      margin-top: 30px;
+    }
   }
   .card-team__list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 30px;
-  }
-  .card-clients__list {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: max(30px);
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 1199px;
   }
   .card-footer__logo {
     margin-left: 0;
@@ -107,44 +118,43 @@
   }
   .portfolio__list-button {
     display: flex;
-    margin-bottom: 40px;
     justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .card-header__list--nav {
     @include card-header__list;
-    gap: 60px;
     margin-left: 93px;
+    gap: 60px;
   }
   .card-header__list--contact-details {
     @include card-header__list;
-    flex-direction: row;
-    gap: 30px;
     margin-left: 345px;
+    flex-direction: row;
   }
   .list-strengths {
-    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
+    row-gap: 30px;
+    & > .list-strengths__box:nth-of-type(odd) {
+      margin-top: 0;
+    }
   }
   .list-strengths__body-icon {
-    margin-bottom: 30px;
+    max-width: 270px;
     padding: 25px 100px;
-    background-color: $background-color-secondary;
-  }
-  .list-strengths__icon {
-    width: 70px;
-    height: 70px;
   }
   .card-what-we-do__list {
     margin-top: 50px;
     display: flex;
+    flex-direction: row;
     gap: 30px;
   }
   .card-team__list {
     margin-top: 50px;
-    display: flex;
+    flex-wrap: nowrap;
     font-size: 16px;
+    max-width: 1600px;
     line-height: 1.18;
     gap: 30px;
   }
@@ -152,31 +162,21 @@
     padding-inline: 32px;
     padding-top: 16px;
     padding-bottom: 30px;
-    display: flex;
     justify-content: space-between;
   }
-
   .card-clients__list {
     margin-top: 50px;
-    display: flex;
     justify-content: space-between;
     column-gap: 15px;
   }
-
   .card-footer__list {
     text-align: left;
     width: 246px;
   }
   .card-footer__social-list {
     margin-left: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 206px;
   }
-
   .portfolio__list-button {
-    display: flex;
-    justify-content: center;
     margin-bottom: 50px;
   }
 }

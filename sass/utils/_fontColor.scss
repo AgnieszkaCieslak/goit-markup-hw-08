@@ -1,5 +1,5 @@
-@media screen{
-.blue {
+@media screen {
+  .blue {
     color: $color-blue;
   }
   .dark {
@@ -24,7 +24,6 @@
     transition-duration: var(--t-duration);
     transition-timing-function: var(--t-timing-function);
   }
-  
   .dark:hover,
   .dark-grey:hover,
   .light-grey:hover,

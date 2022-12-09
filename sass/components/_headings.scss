@@ -21,10 +21,12 @@
 }
 .card-team__heading {
   @include heading;
+  font-size: 28px;
 }
 .card-clients__heading {
   @include heading;
   margin-bottom: 30px;
+  font-size: 28px;
 }
 .modal__heading {
   margin-bottom: 12px;
@@ -35,10 +37,9 @@
   text-align: center;
   color: $color-dark;
 }
-
 @media screen and (min-width: 1200px) {
   .card-title__heading {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -47,5 +48,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+  }
+  .card-clients__heading {
+    @include heading;
+    margin-bottom: 0;
   }
 }
