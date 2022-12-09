@@ -1715,7 +1715,7 @@ textarea[id=comment].modal__input-details::-webkit-input-placeholder {
 }
 @media screen and (min-width: 1200px) {
   .card-team {
-    max-width: 1600px;
+    max-width: 100%;
   }
 }
 .card-footer {
